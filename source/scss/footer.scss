@@ -1,0 +1,45 @@
+.footer {
+    padding: 20px 10px 20px 10px;
+    background-color: #F5E0B7;
+}
+.footer-wrapper {
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-column {
+    @include flexbox();
+    flex-flow: column nowrap;
+}
+.footer-menu {
+
+}
+.footer-menu-list {
+    @include flexbox();
+    li{
+        margin: 0px 40px 0px 40px;
+        &:first-child{
+            margin: 0px 40px 0px 0px;
+        }
+        &:last-child{
+            margin: 0px 0px 0px 40px;
+        }
+    }
+}
+.footer-menu_link {
+}
+.footer-social {
+}
+.footer-social-menu {
+}
+.footer-social-link {
+    width: 10px;
+    height: 10px;
+}
+.social-icon {
+    background-color: #000000;
+}
+.footer-call {
+}
+.footer-contact_us {
+}
