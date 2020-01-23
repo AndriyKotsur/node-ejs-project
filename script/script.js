@@ -1,8 +1,8 @@
 let slideIndex = 1;
+let slides = document.querySelectorAll(".slides-item");
 
 function showSlides(n) {
-    let slides = document.querySelectorAll(".slides-item");
-
+  
     if (n > slides.length) {
         slideIndex = 1;
     } else if (n < 1) {
@@ -38,25 +38,41 @@ slideshow.addEventListener('click', function () {
     console.log('click');
     
 });
+
 /* LIGHTBOX */
 let slideshowImg = document.querySelector('.slideshow-items');
-let modalWindow = document.querySelector('.modal-product');
-let modalClose = document.querySelector('.modal-close');
-
+let modalWindow = document.querySelector('.popup-window_slider');
 slideshowImg.addEventListener('click', function(){
     let image = event.target.closest('img');
     if(!image) return;
-    let modalImage = document.querySelector('.modal-image');
+    let modalImage = document.querySelector('.popup-image');
     modalWindow.style.display = 'block';
     modalImage.src = image.src;
 });
 
-modalClose.addEventListener('click', function(){
+/* CLOSE BTN */
+/* modalClose.addEventListener('click', function(){
     if(!modalClose) return;
     modalWindow.style.display = 'none';
 });
 window.addEventListener('click', function(e){
     if(e.target===modalWindow){
         modalWindow.style.display = 'none';
+    };
+}); */
+
+/* ORDER CALL */
+/* let modalWindow1 = document.querySelector('.popup-window_call');
+let modalCall = document.querySelector('.footer-contact_us');
+modalCall.addEventListener('click', function(){
+    let modalWindow1 = document.querySelector('.popup-window_call');
+    modalWindow1.style.display = 'block';
+}); */
+
+let modalBtns = [...document.querySelectorAll('.popup-btn')];
+modalBtns.forEach(function(btn){
+    btn.onclick = function(){
+        let popup = btn.getAttribute('data-popup');
+        document.getElementById(popup).style.display = 'block';   
     };
 });
