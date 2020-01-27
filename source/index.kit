@@ -15,7 +15,6 @@
 
     <!-- @import header.html -->
 
-    <div class="wrapper">
         <div class="catalogue-top">
             <div class="catalogue-top_left">
                 <div class="catologue-header">
@@ -42,11 +41,49 @@
             </div>
 
         </div>
+    <div class="popup-window_modal" id="pop_call">
+        <div class="popup-close">
+            <span></span>
+        </div>
+        <div class="popup-content">
+            <form class="popup-form">
+                <ul class="popup-form-fields">
+                    <li><input class="popup-form-field" type="text" name="name" id="name" value=""
+                            placeholder="Ваше ім'я та прізвище" required></li>
+                    <li><input class="popup-form-field" type="tel" name="phone" id="phone" value=""
+                            placeholder="Ваш номер телефона" required></li>
+                    <li>
+                        <div class="popup-form-field_btn"><input type="submit" value="Надіслати"></div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </div>
+
+    <div class="popup-window_modal" id="pop_message_order">
+        <div class="popup-close">
+            <span></span>
+        </div>
+        <div class="popup-content">
+            <form class="popup-form">
+                <ul class="popup-form_fields">
+                    <li><input class="popup-form-field" type="text" name="name" value=""
+                            placeholder="Ваше ім'я та прізвище" required></li>
+                    <li><input class="popup-form-field" type="tel" name="phone" value=""
+                            placeholder="Ваш номер телефона" required></li>
+                    <li><textarea class="popup-form-field" name="message" id="message" cols="30" rows="10"
+                            placeholder="Ваше повідомлення"></textarea></li>
+                    <li>
+                        <div class="popup-form-field_btn"><input type="submit" value="Надіслати">
+                    </li>
+                </ul>
+            </form>
+        </div>
     </div>
 
     <!-- @import footer.html -->
 
-
+<script src="script/script.js"></script>
 </body>
 
 </html>
