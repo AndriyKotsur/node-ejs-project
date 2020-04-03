@@ -10,76 +10,72 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <div class="header-top">
-                    <a href="#" class="header-top__link popup-btn" data-popup="pop_call">Замовити дзвінок</a>
-                    <div class="header-top-lang">
-                        <a href="#" class="header-top-lang__item">EN</a>
-                        <a href="#" class="header-top-lang__item">RU</a>
-                        <a href="#" class="header-top-lang__item">UA</a>
-                    </div>
-                </div>
-                <div class="header-bottom">
-                    <div class="header-bottom__column">
-                        <nav class="header-bottom-menu">
-                            <ul class="header-bottom-menu-list">
-                                <li>
-                                    <a href="#" class="header-bottom-menu__link">Продукція</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="header-bottom-menu__link">Співпраця</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="header-bottom__column">
-                        <a href="#" class="header-logo">
-                            <img src="../img/logo_finish.svg" alt="logotype">
-                        </a>
-                    </div>
-                    <div class="header-bottom__column">
-                        <nav class="header-bottom-menu">
-                            <ul class="header-bottom-menu-list">
-                                <li>
-                                    <a href="#" class="header-bottom-menu__link">Про нас</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="header-bottom-menu__link">Контакти</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
+    
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-top">
+                <a href="#" class="header-top__link popupBtn" data-popup="pop_call">Замовити дзвінок</a>
+                <div class="header-top-lang">
+                    <a href="#" class="header-top-lang__item">EN</a>
+                    <a href="#" class="header-top-lang__item">RU</a>
+                    <a href="#" class="header-top-lang__item">UA</a>
                 </div>
             </div>
-        </header>
-    </div>
-    <div class="container">
+            <div class="header-bottom">
+                <div class="header-bottom__column">
+                    <nav class="header-bottom-menu">
+                        <ul class="header-bottom-menu-list">
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Продукція</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Співпраця</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-bottom__column">
+                    <a href="" class="header-logo"></a>
+                </div>
+                <div class="header-bottom__column">
+                    <nav class="header-bottom-menu">
+                        <ul class="header-bottom-menu-list">
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Про нас</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>    <div class="container">
 
         <div class="product-wrapper">
             <div class="product-column">
-                <div class="slideshow-container">
+                <div class="slider-container">
                     <div class="slider-title">Рис ваговий</div>
-                    <div class="slideshow-items">
-                        <div class="slides-item"><img src="img/slides/rice.jpeg" alt="Slides photography"></div>
-                        <div class="slides-item"><img src="img/slides/grain.jpeg" alt="Slides photography"></div>
-                        <div class="slides-item"><img src="img/slides/grain2.jpeg" alt="Slides photography"></div>
-                        <div class="slides-item"><img src="img/slides/grain3.jpeg" alt="Slides photography"></div>
-                        <a class="prev">&#10094;</a>
-                        <a class="next">&#10095;</a>
-                    </div>
-                    <div class="slideshow-row">
-                        <div class="slideshow-row-items"><img src="img/slides/rice.jpeg" alt="Slides photography"
+                    <div class="slider-container-items sliderContainer">
+                        <img src="img/slides/rice.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <img src="img/slides/grain.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <img src="img/slides/grain2.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <img src="img/slides/grain3.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <a class="prev-btn prevBtn"></a>
+                       <a class="next-btn nextBtn"></a>
+                   </div>
+                   <div class="slider-gallery-container sliderGallery">
+                        <div class="slider-gallery-items"><img src="img/slides/rice.jpeg" alt="Slides photography"
                                 id="1">
                         </div>
-                        <div class="slideshow-row-items"><img src="img/slides/grain.jpeg" alt="Slides photography"
+                        <div class="slider-gallery-items"><img src="img/slides/grain.jpeg" alt="Slides photography"
                                 id="2">
                         </div>
-                        <div class="slideshow-row-items"><img src="img/slides/grain2.jpeg" alt="Slides photography"
+                        <div class="slider-gallery-items"><img src="img/slides/grain2.jpeg" alt="Slides photography"
                                 id="3">
                         </div>
-                        <div class="slideshow-row-items"><img src="img/slides/grain3.jpeg" alt="Slides photography"
+                        <div class="slider-gallery-items"><img src="img/slides/grain3.jpeg" alt="Slides photography"
                                 id="4">
                         </div>
                     </div>
@@ -136,102 +132,119 @@
                     </tbody>
                 </table>
                 <div class="product-button_order">
-                    <a href="#" class="product-button_link popup-btn" data-popup="pop_message_order">Зробити
+                    <a href="#" class="product-button_link popupBtn" data-popup="pop_message_order">Зробити
                         замовлення</a>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="popup-window_slider">
-        <div class="popup-close">
-            <span></span>
-        </div>
-        <div class="popup-content">
-            <img class="popup-image" alt="Modal image">
-        </div>
-    </div>
 
-    <div class="popup-window_modal" id="pop_call">
-        <div class="popup-close">
-            <span></span>
-        </div>
-        <div class="popup-content">
-            <form class="popup-form">
-                <ul class="popup-form-fields">
-                    <li><input class="popup-form-field" type="text" name="name" id="name" value=""
-                            placeholder="Ваше ім'я та прізвище" required></li>
-                    <li><input class="popup-form-field" type="tel" name="phone" id="phone" value=""
-                            placeholder="Ваш номер телефона" required></li>
-                    <li>
-                        <div class="popup-form-field_btn"><input type="submit" value="Надіслати"></div>
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>
-
-    <div class="popup-window_modal" id="pop_message_order">
-        <div class="popup-close">
-            <span></span>
-        </div>
-        <div class="popup-content">
-            <form class="popup-form">
-                <ul class="popup-form_fields">
-                    <li><input class="popup-form-field" type="text" name="name" value=""
-                            placeholder="Ваше ім'я та прізвище" required></li>
-                    <li><input class="popup-form-field" type="tel" name="phone" value=""
-                            placeholder="Ваш номер телефона" required></li>
-                    <li><textarea class="popup-form-field" name="message" id="message" cols="30" rows="10"
-                            placeholder="Ваше повідомлення"></textarea></li>
-                    <li>
-                        <div class="popup-form-field_btn"><input type="submit" value="Надіслати">
-                    </li>
-                </ul>
-            </form>
-        </div>
-    </div>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-column">
-                    <img src="../img/logo_finish.svg" alt="Logotype">
-                </div>
-                <div class="footer-column">
-                    <nav class="footer-menu">
-                        <ul class="footer-menu-list">
-                            <li> <a href="#" class="footer-menu_link">Продукція</a></li>
-                            <li> <a href="#" class="footer-menu_link">Співпраця</a></li>
-                            <li> <a href="#" class="footer-menu_link">Про нас</a></li>
-                            <li> <a href="#" class="footer-menu_link">Контакти</a></li>
-                        </ul>
-                    </nav>
-                    <div class="footer-social">
-                        <ul class="footer-social-menu">
-                            <li> <a href="#" rel="nofollow" class="footer-social-link">
-                                    <span class="social-icon"></span>
-                                </a></li>
-                            <li> <a href="#" rel="nofollow" class="footer-social-link">
-                                    <span class="social-icon"></span>
-                                </a></li>
-                            <li> <a href="#" rel="nofollow" class="footer-social-link">
-                                    <span class="social-icon"></span>
-                                </a></li>
-                            <li> <a href="#" rel="nofollow" class="footer-social-link">
-                                    <span class="social-icon"></span>
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <a href="tel:+380664126181" class="footer-call">+380 66 412 61 81</a>
-                    <a href="#" class="footer-contact_us popup-btn">Напишіть нам</a>
-                </div>
+        <div class="popup-window_slider">
+            <div class="popup-content_slider sliderModalContainer"></div>
+            <a class="prev-btn-modal prevBtnModal"></a>
+            <a class="next-btn-modal nextBtnModal"></a>
+            <div class="popup-close popupCloseBtn">
+                <span></span>
             </div>
         </div>
+    
+        <div class="popup-window_modal" id="pop_call">
+            <div class="popup-close popupCloseBtn">
+                <span></span>
+            </div>
+            <div class="popup-content">
+                <form class="popup-form">
+                    <ul class="popup-form-fields">
+                        <li><input class="popup-form-field" type="text" name="name" id="name" value=""
+                                placeholder="Ваше ім'я та прізвище" required></li>
+                        <li><input class="popup-form-field" type="tel" name="phone" id="phone" value=""
+                                placeholder="Ваш номер телефона" required></li>
+                        <li>
+                            <div class="popup-form-field_btn"><input type="submit" value="Надіслати"></div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    
+        <div class="popup-window_modal" id="pop_message_order">
+            <div class="popup-close popupCloseBtn">
+                <span></span>
+            </div>
+            <div class="popup-content">
+                <form class="popup-form">
+                    <ul class="popup-form_fields">
+                        <li><input class="popup-form-field" type="text" name="name" value=""
+                                placeholder="Ваше ім'я та прізвище" required></li>
+                        <li><input class="popup-form-field" type="tel" name="phone" value=""
+                                placeholder="Ваш номер телефона" required></li>
+                        <li><textarea class="popup-form-field" name="message" id="message" cols="30" rows="10"
+                                placeholder="Ваше повідомлення"></textarea></li>
+                        <li>
+                            <div class="popup-form-field_btn"><input type="submit" value="Надіслати">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <!-- <div class="popup-chat">
+            <div class="pop-chat_close">
+                
+            </div>
+        </div>
+        <div class="popup-chat_links">
+            <div class="popup-chat_viber">
+                <a href="#" class="popup-chat_viber icon"></a>
+            </div>
+            <div class="popup-chat_telegram">
+                <a href="#" class="popup-chat_telegram icon"></a>
+            </div>
+            <div class="popup-chat_facebook">
+                <a href="#" class="popup-chat_facebook icon"></a>
+            </div>
+        </div> -->
+    </div>
+    
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrapper">
+            <div class="footer-column">
+                <img src="img/logo.svg" alt="Logotype">
+            </div>
+            <div class="footer-column">
+                <nav class="footer-menu">
+                    <ul class="footer-menu-list">
+                        <li> <a href="#" class="footer-menu_link">Продукція</a></li>
+                        <li> <a href="#" class="footer-menu_link">Співпраця</a></li>
+                        <li> <a href="#" class="footer-menu_link">Про нас</a></li>
+                        <li> <a href="#" class="footer-menu_link">Контакти</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-social">
+                     <ul class="footer-social-menu">
+                         <li> <a href="#" rel="nofollow" class="footer-social-link2">
+                             
+                         </a></li>
+                         <li> <a href="#" rel="nofollow" class="footer-social-link">
+                             <span class="social-icon"></span>
+                         </a></li>
+                         <li> <a href="#" rel="nofollow" class="footer-social-link">
+                             <span class="social-icon"></span>
+                         </a></li>
+                         <li> <a href="#" rel="nofollow" class="footer-social-link">
+                             <span class="social-icon"></span>
+                         </a></li>
+                     </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <a href="tel:+380664126181" class="footer-call">+380 11 111 11 11</a>
+                <a href="#" class="footer-contact_us popupBtn" data-popup="pop_message_order">Напишіть нам</a>
+            </div>
+        </div>
+    </div>
 
-    </footer>
-    <script src="script/script.js"></script>
+</footer>    <script src="script/script.js"></script>
 </body>
 
 </html>

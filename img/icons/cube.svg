@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 102.02 112.29"><defs><style>.cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px;}</style></defs><title>Asset 19</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polygon class="cls-1" points="1.01 28.75 1.91 83.75 51.91 111.14 101.01 83.53 100.11 28.53 50.11 1.14 1.01 28.75"/><polyline class="cls-1" points="1.01 28.75 51.01 56.14 100.11 28.53"/><line class="cls-1" x1="51.91" y1="111.14" x2="51.01" y2="56.14"/></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="93.028" height="103.439" viewBox="0 0 93.028 103.439">
+  <g id="icon_cube" transform="translate(1.514 1.72)">
+    <g id="Layer_1" data-name="Layer 1">
+      <path id="Path_55" data-name="Path 55" d="M1.01,26.24l.81,50,45,24.9,44.19-25.1-.81-50-45-24.9Z" transform="translate(-1.01 -1.14)" fill="#846227" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Path_56" data-name="Path 56" d="M1.01,28.75,45.965,56.14,90.11,28.53" transform="translate(-1.01 -4.464)" fill="#846227" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+      <line id="Line_14" data-name="Line 14" x1="0.545" y1="48.5" transform="translate(44.955 50)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
