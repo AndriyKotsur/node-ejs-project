@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogue item</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-top">
+                <a href="#" class="header-top__link popupBtn" data-popup="pop_call">Замовити дзвінок</a>
+                <div class="header-top-lang">
+                    <a href="#" class="header-top-lang__item">EN</a>
+                    <a href="#" class="header-top-lang__item">RU</a>
+                    <a href="#" class="header-top-lang__item">UA</a>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="header-bottom__column">
+                    <nav class="header-bottom-menu">
+                        <ul class="header-bottom-menu-list">
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Продукція</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Співпраця</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-bottom__column">
+                    <a href="" class="header-logo"></a>
+                </div>
+                <div class="header-bottom__column">
+                    <nav class="header-bottom-menu">
+                        <ul class="header-bottom-menu-list">
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Про нас</a>
+                            </li>
+                            <li>
+                                <a href="#" class="header-bottom-menu__link">Контакти</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>    <div class="container">
+        <div class="product-wrapper">
+            <div class="product-column">
+                <div class="slider-container">
+                    <div class="slider-title">Рис ваговий</div>
+                    <div class="slider-container-items sliderContainer">
+                        <img src="img/slides/rice.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <img src="img/slides/grain.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <img src="img/slides/grain2.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <img src="img/slides/grain3.jpeg" class="slides-item slidesItem" alt="Slides photography"/>
+                        <a class="prev-btn prevBtn"></a>
+                       <a class="next-btn nextBtn"></a>
+                   </div>
+                   <div class="slider-gallery-container sliderGallery">
+                        <div class="slider-gallery-items"><img src="img/slides/rice.jpeg" alt="Slides photography"
+                                id="1">
+                        </div>
+                        <div class="slider-gallery-items"><img src="img/slides/grain.jpeg" alt="Slides photography"
+                                id="2">
+                        </div>
+                        <div class="slider-gallery-items"><img src="img/slides/grain2.jpeg" alt="Slides photography"
+                                id="3">
+                        </div>
+                        <div class="slider-gallery-items"><img src="img/slides/grain3.jpeg" alt="Slides photography"
+                                id="4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-column">
+                <div class="product-title">Опис товару</div>
+                <table class="product-table">
+                    <tbody class="product-table_body">
+                        <tr>
+                            <td>Найменування товару</td>
+                            <td>Кухона сіль</td>
+                        </tr>
+                        <tr>
+                            <td>Склад</td>
+                            <td>сіль 100%</td>
+                        </tr>
+                        <tr>
+                            <td>Нормативний документ</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Фасовка нетто</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Фасовка брутто</td>
+                            <td>1000 г. ± 3%</td>
+                        </tr>
+                        <tr>
+                            <td>Штрих код упаковки</td>
+                            <td>4820150930035</td>
+                        </tr>
+                        <tr>
+                            <td>Тип пакування упаковки</td>
+                            <td>Поліпропілен</td>
+                        </tr>
+                        <tr>
+                            <td>Кількість шт./kg ящик</td>
+                            <td>25 шт./ 25 кг.</td>
+                        </tr>
+                        <tr>
+                            <td>Кількість шт./kg піддон</td>
+                            <td>20 шт/ 20 кг</td>
+                        </tr>
+                        <tr>
+                            <td>Термін придатності</td>
+                            <td>2 роки з дати виробництва</td>
+                        </tr>
+                        <tr>
+                            <td>Умови зберігання</td>
+                            <td>Зберігати в сухому місці при відносній вологості повітря не більше 75 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="product-button_order">
+                    <a href="#" class="product-button_link popupBtn" data-popup="pop_message_order">Зробити
+                        замовлення</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="popup-window_slider">
+            <div class="popup-content_slider sliderModalContainer"></div>
+            <a class="prev-btn-modal prevBtnModal"></a>
+            <a class="next-btn-modal nextBtnModal"></a>
+            <div class="popup-close popupCloseBtnSlider">
+                <span></span>
+            </div>
+        </div>
+    
+<div class="popup-window_modal" id="pop_call">
+    <div class="popup-close popupCloseBtn">
+        <span></span>
+    </div>
+    <div class="popup-content">
+        <form class="popup-form">
+            <ul class="popup-form-fields">
+                <li><input class="popup-form-field" type="text" name="name" id="name" value=""
+                        placeholder="Ваше ім'я та прізвище" required></li>
+                <li><input class="popup-form-field" type="tel" name="phone" id="phone" value=""
+                        placeholder="Ваш номер телефона" required></li>
+                <li>
+                    <div class="popup-form-field_btn"><input type="submit" value="Надіслати"></div>
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+<div class="popup-window_modal" id="pop_message_order">
+    <div class="popup-close popupCloseBtn">
+        <span></span>
+    </div>
+    <div class="popup-content">
+        <form class="popup-form">
+            <ul class="popup-form_fields">
+                <li><input class="popup-form-field" type="text" name="name" value=""
+                        placeholder="Ваше ім'я та прізвище" required></li>
+                <li><input class="popup-form-field" type="tel" name="phone" value=""
+                        placeholder="Ваш номер телефона" required></li>
+                <li><textarea class="popup-form-field" name="message" id="message" cols="30" rows="10"
+                        placeholder="Ваше повідомлення"></textarea></li>
+                <li>
+                    <div class="popup-form-field_btn"><input type="submit" value="Надіслати">
+                </li>
+            </ul>
+        </form>
+    </div>
+</div>
+</div>        <!-- <div class="popup-chat">
+            <div class="pop-chat_close">
+                
+            </div>
+        </div>
+        <div class="popup-chat_links">
+            <div class="popup-chat_viber">
+                <a href="#" class="popup-chat_viber icon"></a>
+            </div>
+            <div class="popup-chat_telegram">
+                <a href="#" class="popup-chat_telegram icon"></a>
+            </div>
+            <div class="popup-chat_facebook">
+                <a href="#" class="popup-chat_facebook icon"></a>
+            </div>
+        </div> -->
+    </div>
+    
+<footer class="footer">
+  <div class="container">
+    <div class="footer-wrapper">
+      <div class="footer-column">
+        <img src="img/logo.svg" alt="Logotype" class="footer-logo"/>
+      </div>
+      <div class="footer-column">
+        <nav class="footer-nav-menu">
+          <ul class="footer-nav-menu-list">
+            <li><a href="#" class="footer-nav-menu_link">Продукція</a></li>
+            <li><a href="#" class="footer-nav-menu_link">Співпраця</a></li>
+            <li><a href="#" class="footer-nav-menu_link">Про нас</a></li>
+            <li><a href="#" class="footer-nav-menu_link">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="footer-social">
+          <ul class="footer-social-menu">
+            <li>
+              <a href="#" rel="nofollow" class="footer-social-menu_link twitter"> </a>
+            </li>
+            <li>
+              <a href="#" rel="nofollow" class="footer-social-menu_link fb"> </a>
+            </li>
+            <li>
+              <a href="#" rel="nofollow" class="footer-social-menu_link linkedin"> </a>
+            </li>
+            <li>
+              <a href="#" rel="nofollow" class="footer-social-menu_link instagram"> </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-column">
+        <a href="tel:+380664126181" class="footer-call">+380 11 111 11 11</a>
+        <a
+          href="#"
+          class="footer-contact_us popupBtn"
+          data-popup="pop_message_order"
+          >Напишіть нам</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="script/script.js"></script>
+</body>
+
+</html>

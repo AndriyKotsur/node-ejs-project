@@ -1,0 +1,135 @@
+.footer {
+  flex-shrink: 0;
+  padding: 1.25em 0px;
+  background-color: $color2;
+
+  &-wrapper {
+    @include flexbox();
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-column {
+  @include flexbox();
+  flex-flow: column nowrap;
+}
+
+.footer-nav-menu {
+  &-list {
+    @include flexbox();
+    margin-bottom: .65em;
+
+    li {
+      margin-right: 2.5em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &_link {
+    color: $color1;
+    font-family: $fontfamily;
+    text-transform: uppercase;
+    letter-spacing: normal;
+    text-align: center;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-social {}
+
+.footer-social-menu {
+  @include flexbox();
+  margin-top: .65em;
+  justify-content: center;
+
+  li {
+    margin-right: 2.5em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &_link {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $color1;
+
+    &.twitter::before {
+      @include pseudo();
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      transform: translate(-50%, -50%);
+      background: url("../img/icons/icon-twitter.svg");
+    }
+
+    &.fb::before {
+      @include pseudo();
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      transform: translate(-50%, -50%);
+      background: url("../img/icons/icon-facebook.svg");
+    }
+
+    &.linkedin::before {
+      @include pseudo();
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      transform: translate(-50%, -50%);
+      background: url("../img/icons/icon-linkedin.svg");
+    }
+
+    &.instagram::before {
+      @include pseudo();
+      top: 50%;
+      left: 50%;
+      width: 30px;
+      height: 30px;
+      transform: translate(-50%, -50%);
+      background: url("../img/icons/icon-instagram.svg");
+    }
+  }
+}
+
+.footer-call {
+  color: $color1;
+  font-size: .85em;
+  font-family: $fontfamily;
+  letter-spacing: normal;
+  text-align: right;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-contact_us {
+  margin-top: .65rem;
+  padding: .65rem;
+  color: #ffffff;
+  font-size: .85em;
+  font-family: $fontfamily;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  background-color: $color1;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
