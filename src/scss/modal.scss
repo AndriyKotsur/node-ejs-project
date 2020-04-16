@@ -1,0 +1,195 @@
+/* MODAL  WINDOWS*/
+.popup-window_modal {
+  display: none;
+  position: fixed;
+  z-index: 11;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 450px;
+  transform: translate(-50%, -50%);
+}
+.popup-form {
+  background: #ffffff;
+  padding: 2.5em 0 .65em 0;
+
+  ul li {
+    display: block;
+    padding: 0.95em 1.25em;
+    min-height: 45px;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid $color1;
+    margin-right: 1.25em;
+  }
+}
+
+.popup-form-field {
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  padding: .65rem;
+  border: 1px solid $color1;
+  font-size: .85em;
+
+  &:focus {
+    outline: 2px solid $color1;
+  }
+}
+
+input[type="submit"] {
+  padding: .65rem 3.15rem;
+  margin-top: .95rem;
+  background-color: $color2;
+  cursor: pointer;
+  border: 1px solid $color1;
+  font-size: 1.15em;
+  color: $color1;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color1;
+    color: #ffffff;
+  }
+}
+
+textarea {
+  width: 100%;
+  height: 140px;
+  resize: none;
+}
+
+.popup-form-field_btn {
+  text-align: center;
+}
+
+.popup-close {
+  display: block;
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 20px;
+  margin: 1.55em 1.55em 0em 0em;
+}
+
+.popup-close:before,
+.popup-close:after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.popup-close:before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.popup-close:after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+
+// /* CHATBOX */
+// .popup-chat {
+//   position: fixed;
+//   bottom: 20px;
+//   right: 20px;
+//   width: 55px;
+//   height: 55px;
+//   border-radius: 50%;
+//   background-color: #f5e0b7;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     right: 50%;
+//     width: 30px;
+//     height: 30px;
+//     transform: translate(-50%, 50%);
+//   }
+// }
+
+// .popup-chat_links {
+//   display: none;
+// }
+
+// .popup-chat_viber.icon {
+//   position: fixed;
+//   bottom: 90px;
+//   right: 20px;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+//   background-color: #f5e0b7;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     right: 50%;
+//     width: 28px;
+//     height: 37px;
+//     transform: translate(-50%, 50%);
+//     background: no-repeat url("../img/icons/twitter.svg");
+//   }
+// }
+
+// .popup-chat_telegram.icon {
+//   position: fixed;
+//   bottom: 160px;
+//   right: 20px;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+//   background-color: #f5e0b7;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     right: 50%;
+//     width: 30px;
+//     height: 30px;
+//     transform: translate(-50%, 50%);
+//     background-image: url("../img/icons/facebook.svg");
+//   }
+// }
+
+// .popup-chat_facebook.icon {
+//   position: fixed;
+//   bottom: 230px;
+//   right: 20px;
+//   width: 60px;
+//   height: 60px;
+//   border-radius: 50%;
+//   background-color: #f5e0b7;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     left: 50%;
+//     right: 50%;
+//     width: 30px;
+//     height: 30px;
+//     transform: translate(-50%, 50%);
+//     background-image: url("../img/icons/facebook.svg");
+//   }
+// }
