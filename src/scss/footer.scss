@@ -133,3 +133,45 @@
     text-decoration: underline;
   }
 }
+
+@media (max-width: 768px) {
+  .footer-logo {
+    width: 80px;
+  }
+
+  .footer-nav-menu {
+    font-size: .7em;
+  }
+
+  .footer-social-menu {
+    font-size: 0.7em;
+  }
+
+  .footer-column:last-child {
+    font-size: .75em;
+  }
+}
+
+@media (max-width: 425px) {
+  .footer {
+    &-wrapper {
+      justify-content: center;
+    }
+  }
+
+  .footer-logo {
+    display: none;
+  }
+
+  .footer-nav-menu {
+    font-size: .7em;
+  }
+
+  .footer-social-menu {
+    font-size: .85em;
+  }
+
+  .footer-column:last-child {
+    display: none;
+  }
+}

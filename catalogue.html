@@ -13,17 +13,17 @@
     
     <header class="header">
         <div class="header-inner">
-            <div class="header-top">
+            <div class="header-top menuTop">
                 <a href="#" class="header-top__link popupBtn" data-popup="pop_call">Замовити дзвінок</a>
                 <div class="header-top-lang">
-                    <a href="#" class="header-top-lang__item">EN</a>
-                    <a href="#" class="header-top-lang__item">RU</a>
-                    <a href="#" class="header-top-lang__item">UA</a>
+                    <a href="#" class="header-top-lang_item">EN</a>
+                    <a href="#" class="header-top-lang_item">RU</a>
+                    <a href="#" class="header-top-lang_item">UA</a>
                 </div>
             </div>
             <div class="header-bottom">
-                <div class="header-bottom__column">
-                    <nav class="header-bottom-menu">
+                <div class="header-bottom__column leftColumn">
+                    <nav class="header-bottom-menu menuLeft">
                         <ul class="header-bottom-menu-list">
                             <li>
                                 <a href="catalogue.html" class="header-bottom-menu__link">Продукція</a>
@@ -37,8 +37,8 @@
                 <div class="header-bottom__column">
                     <a href="index.html" class="header-logo"></a>
                 </div>
-                <div class="header-bottom__column">
-                    <nav class="header-bottom-menu">
+                <div class="header-bottom__column rightColumn">
+                    <nav class="header-bottom-menu menuRight">
                         <ul class="header-bottom-menu-list">
                             <li>
                                 <a href="about-us.html" class="header-bottom-menu__link">Про нас</a>
@@ -49,99 +49,122 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="header-burger headerBurger">
+                    <div class="header-burger_icon"></div>
+                </div>
+            </div>
+            <div class="header-burger_menu headerBurgerMenu">
+
             </div>
         </div>
-    </header>    <div class="container">
-        <div class="catalogue-filter">
-            <div class="catalogue-filter_items">Цукор</div>
-            <div class="catalogue-filter_items">Олія</div>
-            <div class="catalogue-filter_items">Сода</div>
-            <div class="catalogue-filter_items">Крупи</div>
-            <div class="catalogue-filter_items">Сіль</div>
-            <div class="catalogue-filter_items">Макарони</div>
-            <div class="catalogue-filter_items">Кава</div>
+    </header>    <div class="catalogue-wrapper">
+        <div class="catalogue-filter filterContainer">
+            <ul class="catalogue-filter-list filterMenu">
+                <li class="catalogue-filter-item">
+                    <a class="catalogue-filter-link">Цукор</a>
+                </li>
+                <li class="catalogue-filter-item">
+                    <a class="catalogue-filter-link">Олія</a>
+                </li>
+                <li class="catalogue-filter-item">
+                    <a class="catalogue-filter-link">Сода</a>
+                </li>
+                <li class="catalogue-filter-item">
+                    <a class="catalogue-filter-link">Крупи</a>
+                </li>
+                <li class="catalogue-filter-item">
+                    <a class="catalogue-filter-link">Сіль</a>
+                </li>
+                <li class="catalogue-filter-item">
+                    <a class="catalogue-filter-link">Макарони</a>
+                </li>
+                <li class="catalogue-filter-item">
+                    <a class="catalogue-filter-link">Кава</a>
+                </li>
+            </ul>
+            <ul class="catalogue-filter-list_dropdown dropdownMenu">
+                <li class="catalogue-filter-item_dropdown dropdownItem">
+                    <a class="dropdownBtn" href="#">Категорії</a>
+                </li>
+            </ul>
         </div>
         <div class="catalogue-items">
-            <div class="catalogue-items-row">
-                    <a href="catalogue-item.html" class="catalogue-item">
-                        <div class="catalogue-item_img">
-                            <img src="img/products/oil.jpg" alt="Catalogue item">
-                        </div>
-                        <div class="catalogue-item_title">
-                            Крупа ячмінна фасована 0,6 кг
-                        </div>
-                    </a>
-                <a href="#" class="catalogue-item">
-                    <div class="catalogue-item_img">
-                        <img src="img/products/grain2.jpeg" alt="Catalogue item">
+            <div class="catalogue-item_wrapper">
+                <div href="catalogue-item.html" class="catalogue-item">
+                    <img src="img/products/oil.jpg" alt="Catalogue item">
+                    <div class="catalogue-item_title">
+                        Крупа ячмінна фасована 0,6 кг
                     </div>
+                </div>
+            </div>
+            <div class="catalogue-item_wrapper">
+                <a href="#" class="catalogue-item">
+                    <img src="img/products/grain2.jpeg" alt="Catalogue item">
                     <div class="catalogue-item_title">
                         Сіль йодована
                     </div>
                 </a>
+            </div>
+            <div class="catalogue-item_wrapper">
                 <a href="#" class="catalogue-item">
-                    <div class="catalogue-item_img">
-                        <img src="img/products/rice.jpeg" alt="Catalogue item">
-                    </div>
+                    <img src="img/products/rice.jpeg" alt="Catalogue item">
                     <div class="catalogue-item_title">
                         Макаронні вироби фасованні
-                        1 кг ТМ “Віліс” 
+                        1 кг ТМ “Віліс”
                     </div>
                 </a>
             </div>
-            <div class="catalogue-items-row">
+            <div class="catalogue-item_wrapper">
                 <a href="#" class="catalogue-item">
-                    <div class="catalogue-item_img">
-                        <img src="img/products/grain.jpeg" alt="Catalogue item">
-                    </div>
+                    <img src="img/products/grain.jpeg" alt="Catalogue item">
                     <div class="catalogue-item_title">
                         Крупа ячмінна фасована 0,6 кг
                     </div>
                 </a>
-            <a href="#" class="catalogue-item">
-                <div class="catalogue-item_img">
+            </div>
+            <div class="catalogue-item_wrapper">
+                <a href="#" class="catalogue-item">
                     <img src="img/products/coffeemachine.jpg" alt="Catalogue item">
-                </div>
-                <div class="catalogue-item_title">
-                    Сіль йодована
-                </div>
-            </a>
-            <a href="#" class="catalogue-item">
-                <div class="catalogue-item_img">
-                    <img src="img/products/grain3.jpeg" alt="Catalogue item">
-                </div>
-                <div class="catalogue-item_title">
-                    Макаронні вироби фасованні
-                    1 кг ТМ “Віліс”
-                </div>
-            </a>
-            </div>
-            <div class="catalogue-items-row">
-                <a href="#" class="catalogue-item">
-                    <div class="catalogue-item_img">
-                        <img src="img/products/rice.jpeg" alt="Catalogue item">
+                    <div class="catalogue-item_title">
+                        Сіль йодована
                     </div>
+                </a>
+            </div>
+            <div class="catalogue-item_wrapper">
+                <a href="#" class="catalogue-item">
+                    <img src="img/products/grain3.jpeg" alt="Catalogue item">
+                    <div class="catalogue-item_title">
+                        Макаронні вироби фасованні
+                        1 кг ТМ “Віліс”
+                    </div>
+                </a>
+            </div>
+            <div class="catalogue-item_wrapper">
+                <a href="#" class="catalogue-item">
+                    <img src="img/products/rice.jpeg" alt="Catalogue item">
                     <div class="catalogue-item_title">
                         Крупа ячмінна фасована 0,6 кг
                     </div>
                 </a>
-            <a href="#" class="catalogue-item">
-                <div class="catalogue-item_img">
+            </div>
+            <div class="catalogue-item_wrapper">
+
+                <a href="#" class="catalogue-item">
                     <img src="img/products/nudles.jpg" alt="Catalogue item">
-                </div>
-                <div class="catalogue-item_title">
-                    Сіль йодована
-                </div>
-            </a>
-            <a href="#" class="catalogue-item">
-                <div class="catalogue-item_img">
+                    <div class="catalogue-item_title">
+                        Сіль йодована
+                    </div>
+                </a>
+            </div>
+            <div class="catalogue-item_wrapper">
+
+                <a href="#" class="catalogue-item">
                     <img src="img/products/coffee.jpg" alt="Catalogue item">
-                </div>
-                <div class="catalogue-item_title">
-                    Макаронні вироби фасованні
-                    1 кг ТМ “Віліс”
-                </div>
-            </a>
+                    <div class="catalogue-item_title">
+                        Макаронні вироби фасованні
+                        1 кг ТМ “Віліс”
+                    </div>
+                </a>
             </div>
         </div>
     </div>
