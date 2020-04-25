@@ -19,6 +19,7 @@
   max-width: 450px;
   transform: translate(-50%, -50%);
 }
+
 .popup-form {
   background: #ffffff;
   padding: 2.5em 0 .65em 0;
@@ -106,90 +107,18 @@ textarea {
   bottom: 9px;
 }
 
-// /* CHATBOX */
-// .popup-chat {
-//   position: fixed;
-//   bottom: 20px;
-//   right: 20px;
-//   width: 55px;
-//   height: 55px;
-//   border-radius: 50%;
-//   background-color: #f5e0b7;
+@media (max-width: 768px) {
+  .popup-close {
+    top: 10%;
+  }
+  input[type="submit"]{
+    font-size: 1em;
+  }
+}
 
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     left: 50%;
-//     right: 50%;
-//     width: 30px;
-//     height: 30px;
-//     transform: translate(-50%, 50%);
-//   }
-// }
-
-// .popup-chat_links {
-//   display: none;
-// }
-
-// .popup-chat_viber.icon {
-//   position: fixed;
-//   bottom: 90px;
-//   right: 20px;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 50%;
-//   background-color: #f5e0b7;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     left: 50%;
-//     right: 50%;
-//     width: 28px;
-//     height: 37px;
-//     transform: translate(-50%, 50%);
-//     background: no-repeat url("../img/icons/twitter.svg");
-//   }
-// }
-
-// .popup-chat_telegram.icon {
-//   position: fixed;
-//   bottom: 160px;
-//   right: 20px;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 50%;
-//   background-color: #f5e0b7;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     left: 50%;
-//     right: 50%;
-//     width: 30px;
-//     height: 30px;
-//     transform: translate(-50%, 50%);
-//     background-image: url("../img/icons/facebook.svg");
-//   }
-// }
-
-// .popup-chat_facebook.icon {
-//   position: fixed;
-//   bottom: 230px;
-//   right: 20px;
-//   width: 60px;
-//   height: 60px;
-//   border-radius: 50%;
-//   background-color: #f5e0b7;
-
-//   &::before {
-//     content: "";
-//     position: absolute;
-//     left: 50%;
-//     right: 50%;
-//     width: 30px;
-//     height: 30px;
-//     transform: translate(-50%, 50%);
-//     background-image: url("../img/icons/facebook.svg");
-//   }
-// }
+@media (max-width: 475px) {
+  .popup-content {
+    top: 55%;
+    padding: 0 1.25em;
+  }
+}
