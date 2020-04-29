@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catalogue item</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    {{>header}}
+
+    <div class="container">
+        <div class="product-wrapper">
+            <div class="product-column">
+                <div class="slider-container">
+                    <div class="slider-title">Рис ваговий</div>
+                    <div class="slider-container-items sliderContainer">
+                        <img src="img/products/rice.jpeg" class="slides-item slidesItem" alt="Slides photography" />
+                        <img src="img/products/grain.jpeg" class="slides-item slidesItem" alt="Slides photography" />
+                        <img src="img/products/grain2.jpeg" class="slides-item slidesItem" alt="Slides photography" />
+                        <img src="img/products/grain3.jpeg" class="slides-item slidesItem" alt="Slides photography" />
+                        <a class="prev-btn prevBtn"></a>
+                        <a class="next-btn nextBtn"></a>
+                    </div>
+                    <div class="slider-gallery-container sliderGallery">
+                        <div class="slider-gallery-items"><img src="img/products/rice.jpeg" alt="Slides photography"
+                                id="1">
+                        </div>
+                        <div class="slider-gallery-items"><img src="img/products/grain.jpeg" alt="Slides photography"
+                                id="2">
+                        </div>
+                        <div class="slider-gallery-items"><img src="img/products/grain2.jpeg" alt="Slides photography"
+                                id="3">
+                        </div>
+                        <div class="slider-gallery-items"><img src="img/products/grain3.jpeg" alt="Slides photography"
+                                id="4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-column">
+                <div class="product-description">Опис товару</div>
+                <table class="product-table">
+                    <tbody class="product-table_body">
+                        <tr>
+                            <td>Найменування товару</td>
+                            <td>Кухона сіль</td>
+                        </tr>
+                        <tr>
+                            <td>Склад</td>
+                            <td>сіль 100%</td>
+                        </tr>
+                        <tr>
+                            <td>Нормативний документ</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Фасовка нетто</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Фасовка брутто</td>
+                            <td>1000 г. ± 3%</td>
+                        </tr>
+                        <tr>
+                            <td>Штрих код упаковки</td>
+                            <td>4820150930035</td>
+                        </tr>
+                        <tr>
+                            <td>Тип пакування упаковки</td>
+                            <td>Поліпропілен</td>
+                        </tr>
+                        <tr>
+                            <td>Кількість шт./kg ящик</td>
+                            <td>25 шт./ 25 кг.</td>
+                        </tr>
+                        <tr>
+                            <td>Кількість шт./kg піддон</td>
+                            <td>20 шт/ 20 кг</td>
+                        </tr>
+                        <tr>
+                            <td>Термін придатності</td>
+                            <td>2 роки з дати виробництва</td>
+                        </tr>
+                        <tr>
+                            <td>Умови зберігання</td>
+                            <td>Зберігати в сухому місці при відносній вологості повітря не більше 75 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="product-button_order">
+                    <a href="#" class="product-button_link popupBtn" data-popup="pop_message_order">Зробити
+                        замовлення</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup-window_slider">
+            <div class="popup-content_slider sliderModalContainer"></div>
+            <a class="prev-btn-modal prevBtnModal"></a>
+            <a class="next-btn-modal nextBtnModal"></a>
+            <div class="popup-close popupCloseBtnSlider">
+                <span></span>
+            </div>
+        </div>
+
+        {{>modal}}
+        {{>footer}}
+        <script src="script/script.js"></script>
+</body>
+
+</html>
