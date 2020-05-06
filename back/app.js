@@ -1,7 +1,7 @@
 const createError = require('http-errors');
 const express = require('express');
 const path = require('path');
-const hbs = require('hbs');
+const ejs = require('ejs')
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
@@ -18,11 +18,11 @@ const productsRouter = require('./routes/products');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
-hbs.registerPartials(path.join(__dirname, 'partials'))
+app.set('view engine', 'ejs');
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/uploads', express.static(__dirname + '/uploads'));
+app.use(express.static('public'));
 app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(cookieParser());

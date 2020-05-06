@@ -71,7 +71,7 @@ $color3: #707070;
 
     &::before {
       content: "";
-      background: url("../img/icons/icon-wheat-left.svg");
+      background: url("../images/icons/icon-wheat-left.svg");
       width: 41px;
       height: 16px;
       display: inline-block;
@@ -81,7 +81,7 @@ $color3: #707070;
 
     &::after {
       content: "";
-      background: url("../img/icons/icon-wheat-right.svg");
+      background: url("../images/icons/icon-wheat-right.svg");
       width: 41px;
       height: 16px;
       display: inline-block;
@@ -374,7 +374,7 @@ $color3: #707070;
 
     &::before {
       content: "";
-      background: url("../img/icons/icon-wheat-left.svg");
+      background: url("../images/icons/icon-wheat-left.svg");
       width: 41px;
       height: 16px;
       display: inline-block;
@@ -384,7 +384,7 @@ $color3: #707070;
 
     &::after {
       content: "";
-      background: url("../img/icons/icon-wheat-right.svg");
+      background: url("../images/icons/icon-wheat-right.svg");
       width: 41px;
       height: 16px;
       display: inline-block;
@@ -418,7 +418,7 @@ $color3: #707070;
       width: 85px;
       height: 85px;
       margin: 0px auto .65em;
-      background: url(../img/icons/icon-diamond.svg);
+      background: url(../images/icons/icon-diamond.svg);
     }
   }
 }
@@ -477,7 +477,7 @@ $color3: #707070;
 
       &::before {
         content: "";
-        background: url("../img/icons/icon-wheat-left.svg");
+        background: url("../images/icons/icon-wheat-left.svg");
         width: 41px;
         height: 16px;
         display: inline-block;
@@ -487,7 +487,7 @@ $color3: #707070;
 
       &::after {
         content: "";
-        background: url("../img/icons/icon-wheat-right.svg");
+        background: url("../images/icons/icon-wheat-right.svg");
         width: 41px;
         height: 16px;
         display: inline-block;
@@ -556,7 +556,7 @@ $color3: #707070;
 
     &::before {
       content: "";
-      background: url("../img/icons/icon-wheat-left.svg");
+      background: url("../images/icons/icon-wheat-left.svg");
       width: 41px;
       height: 16px;
       display: inline-block;
@@ -566,7 +566,7 @@ $color3: #707070;
 
     &::after {
       content: "";
-      background: url("../img/icons/icon-wheat-right.svg");
+      background: url("../images/icons/icon-wheat-right.svg");
       width: 41px;
       height: 16px;
       display: inline-block;
@@ -771,7 +771,7 @@ $color3: #707070;
 
     &::before {
       content: '';
-      background: url(../img/icons/icon-cube.svg);
+      background: url(../images/icons/icon-cube.svg);
       display: block;
       width: 93px;
       height: 103px;
@@ -899,7 +899,7 @@ $color3: #707070;
       &::before {
         content: '';
         display: block;
-        background: url(../img/icons/icon-geoposition.svg);
+        background: url(../images/icons/icon-geoposition.svg);
         width: 37px;
         height: 52px;
         margin: 0px auto .95em;
@@ -932,7 +932,7 @@ $color3: #707070;
       &::before {
         content: '';
         display: block;
-        background: url(../img/icons/icon-mobile_phone.svg);
+        background: url(../images/icons/icon-mobile_phone.svg);
         width: 32px;
         height: 48px;
         margin: 0px auto .95em;
@@ -948,7 +948,7 @@ $color3: #707070;
       &::before {
         content: '';
         display: block;
-        background: url(../img/icons/icon-mail.svg);
+        background: url(../images/icons/icon-mail.svg);
         width: 32px;
         height: 32px;
         margin: 0px auto .95em;
@@ -1018,7 +1018,7 @@ $color3: #707070;
           width: 30px;
           height: 24px;
           transform: translate(-50%, -50%);
-          background: url("../img/icons/icon-telegram.svg");
+          background: url("../images/icons/icon-telegram.svg");
         }
 
         &_facebook::before {
@@ -1028,7 +1028,7 @@ $color3: #707070;
           width: 30px;
           height: 30px;
           transform: translate(-50%, -50%);
-          background: url("../img/icons/icon-facebook_messanger.svg");
+          background: url("../images/icons/icon-facebook_messanger.svg");
         }
 
         &_viber {
@@ -1038,7 +1038,7 @@ $color3: #707070;
           width: 22px;
           height: 22px;
           transform: translate(-50%, -50%);
-          background: url("../img/icons/icon-viber.svg");
+          background: url("../images/icons/icon-viber.svg");
         }
 
         &_whatsUp {
@@ -1048,7 +1048,7 @@ $color3: #707070;
           width: 33px;
           height: 33.5px;
           transform: translate(-50%, -50%);
-          background: url("../img/icons/icon-whatsUp.svg");
+          background: url("../images/icons/icon-whatsUp.svg");
         }
       }
     }
@@ -1114,6 +1114,7 @@ $color3: #707070;
 /* CATALOGUE PAGE */
 .catalogue-wrapper {
   @include container_width($width: 1440px);
+  flex: 1 0 auto;
 }
 
 .catalogue-filter {
@@ -1141,6 +1142,7 @@ $color3: #707070;
     padding: .65em .95em;
     border: 1px solid $color1;
     text-align: center;
+    color: #000000;
 
     &.active {
       padding: .75em 1.55em;
@@ -1160,7 +1162,7 @@ $color3: #707070;
 
         &::after {
           content: '';
-          background: url(../img/icons/icon-filter.svg);
+          background: url(../images/icons/icon-filter.svg);
           display: inline-block;
           vertical-align: middle;
           width: 15px;
@@ -1210,6 +1212,47 @@ $color3: #707070;
       color: #000000;
       text-align: center;
       border-bottom: $color1;
+    }
+  }
+}
+
+.catalogue-pagination {
+  @include flexbox();
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.5em;
+
+  &-prev {
+    margin-right: .65em;
+    padding: .65em 1.25em;
+    background: $color1;
+    color: #ffffff;
+
+    &::before {
+      content: '';
+      background: url(../images/icons/icon-left.svg);
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 18px;
+      margin-right: .65em;
+    }
+  }
+
+  &-next {
+    margin-left: .65em;
+    padding: .65em 1.25em;
+    background: $color1;
+    color: #ffffff;
+
+    &::after {
+      content: '';
+      background: url(../images/icons/icon-right.svg);
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 18px;
+      margin-left: .65em;
     }
   }
 }
@@ -1400,7 +1443,7 @@ $color3: #707070;
 
   &::before {
     content: "";
-    background: url(../img/icons/icon-left.svg);
+    background: url(../images/icons/icon-left.svg);
     width: 10px;
     height: 18px;
     display: block;
@@ -1412,7 +1455,7 @@ $color3: #707070;
 
   &::before {
     content: "";
-    background: url(../img/icons/icon-right.svg);
+    background: url(../images/icons/icon-right.svg);
     width: 10px;
     height: 18px;
     display: block;
@@ -1490,7 +1533,7 @@ $color3: #707070;
 
   &::before {
     content: "";
-    background: url(../img/icons/icon-left.svg);
+    background: url(../images/icons/icon-left.svg);
     width: 10px;
     height: 18px;
     display: block;
@@ -1502,16 +1545,15 @@ $color3: #707070;
 
   &::before {
     content: "";
-    background: url(../img/icons/icon-right.svg);
+    background: url(../images/icons/icon-right.svg);
     width: 10px;
     height: 18px;
     display: block;
   }
 }
 
-@media (max-width: 1024px) {
-    
-}
+@media (max-width: 1024px) {}
+
 @media (max-width: 768px) {
   .slider-title {
     font-size: 1em;

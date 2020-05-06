@@ -205,7 +205,7 @@ h6 {
 
 .header-logo::before {
   content: "";
-  background: url(../img/logo.svg);
+  background: url(../images/logo.svg);
   display: block;
   width: 121px;
   height: 52px;
@@ -405,7 +405,7 @@ h6 {
 
 .catalogue-top-left_header::before {
   content: "";
-  background: url("../img/icons/icon-wheat-left.svg");
+  background: url("../images/icons/icon-wheat-left.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -415,7 +415,7 @@ h6 {
 
 .catalogue-top-left_header::after {
   content: "";
-  background: url("../img/icons/icon-wheat-right.svg");
+  background: url("../images/icons/icon-wheat-right.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -710,7 +710,7 @@ h6 {
 
 .main-page-advntg_title::before {
   content: "";
-  background: url("../img/icons/icon-wheat-left.svg");
+  background: url("../images/icons/icon-wheat-left.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -720,7 +720,7 @@ h6 {
 
 .main-page-advntg_title::after {
   content: "";
-  background: url("../img/icons/icon-wheat-right.svg");
+  background: url("../images/icons/icon-wheat-right.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -760,7 +760,7 @@ h6 {
   width: 85px;
   height: 85px;
   margin: 0px auto 0.65em;
-  background: url(../img/icons/icon-diamond.svg);
+  background: url(../images/icons/icon-diamond.svg);
 }
 
 @media (max-width: 768px) {
@@ -831,7 +831,7 @@ h6 {
 
 .main-page-company-description .company-description_title::before {
   content: "";
-  background: url("../img/icons/icon-wheat-left.svg");
+  background: url("../images/icons/icon-wheat-left.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -841,7 +841,7 @@ h6 {
 
 .main-page-company-description .company-description_title::after {
   content: "";
-  background: url("../img/icons/icon-wheat-right.svg");
+  background: url("../images/icons/icon-wheat-right.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -908,7 +908,7 @@ h6 {
 
 .main-page-partners_title::before {
   content: "";
-  background: url("../img/icons/icon-wheat-left.svg");
+  background: url("../images/icons/icon-wheat-left.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -918,7 +918,7 @@ h6 {
 
 .main-page-partners_title::after {
   content: "";
-  background: url("../img/icons/icon-wheat-right.svg");
+  background: url("../images/icons/icon-wheat-right.svg");
   width: 41px;
   height: 16px;
   display: inline-block;
@@ -1153,7 +1153,7 @@ h6 {
 
 .about-us-advntg_item::before {
   content: "";
-  background: url(../img/icons/icon-cube.svg);
+  background: url(../images/icons/icon-cube.svg);
   display: block;
   width: 93px;
   height: 103px;
@@ -1283,7 +1283,7 @@ h6 {
 .contacts-location-item::before {
   content: "";
   display: block;
-  background: url(../img/icons/icon-geoposition.svg);
+  background: url(../images/icons/icon-geoposition.svg);
   width: 37px;
   height: 52px;
   margin: 0px auto 0.95em;
@@ -1325,7 +1325,7 @@ h6 {
 .contacts-info .item-phone_link::before {
   content: "";
   display: block;
-  background: url(../img/icons/icon-mobile_phone.svg);
+  background: url(../images/icons/icon-mobile_phone.svg);
   width: 32px;
   height: 48px;
   margin: 0px auto 0.95em;
@@ -1341,7 +1341,7 @@ h6 {
 .contacts-info .item-mail_link::before {
   content: "";
   display: block;
-  background: url(../img/icons/icon-mail.svg);
+  background: url(../images/icons/icon-mail.svg);
   width: 32px;
   height: 32px;
   margin: 0px auto 0.95em;
@@ -1431,7 +1431,7 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-telegram.svg");
+  background: url("../images/icons/icon-telegram.svg");
 }
 
 .contacts-messanger-items .contacts-messanger-item_facebook::before {
@@ -1445,7 +1445,7 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-facebook_messanger.svg");
+  background: url("../images/icons/icon-facebook_messanger.svg");
 }
 
 .contacts-messanger-items .contacts-messanger-item_viber {
@@ -1459,7 +1459,7 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-viber.svg");
+  background: url("../images/icons/icon-viber.svg");
 }
 
 .contacts-messanger-items .contacts-messanger-item_whatsUp {
@@ -1473,7 +1473,7 @@ h6 {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-whatsUp.svg");
+  background: url("../images/icons/icon-whatsUp.svg");
 }
 
 @media (max-width: 768px) {
@@ -1531,6 +1531,9 @@ h6 {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .catalogue-filter {
@@ -1570,6 +1573,7 @@ h6 {
   padding: 0.65em 0.95em;
   border: 1px solid #846227;
   text-align: center;
+  color: #000000;
 }
 
 .catalogue-filter-item.active {
@@ -1592,7 +1596,7 @@ h6 {
 
 .catalogue-filter-item_dropdown.active::after {
   content: "";
-  background: url(../img/icons/icon-filter.svg);
+  background: url(../images/icons/icon-filter.svg);
   display: inline-block;
   vertical-align: middle;
   width: 15px;
@@ -1649,6 +1653,53 @@ h6 {
   color: #000000;
   text-align: center;
   border-bottom: #846227;
+}
+
+.catalogue-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 2.5em;
+}
+
+.catalogue-pagination-prev {
+  margin-right: 0.65em;
+  padding: 0.65em 1.25em;
+  background: #846227;
+  color: #ffffff;
+}
+
+.catalogue-pagination-prev::before {
+  content: "";
+  background: url(../images/icons/icon-left.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 18px;
+  margin-right: 0.65em;
+}
+
+.catalogue-pagination-next {
+  margin-left: 0.65em;
+  padding: 0.65em 1.25em;
+  background: #846227;
+  color: #ffffff;
+}
+
+.catalogue-pagination-next::after {
+  content: "";
+  background: url(../images/icons/icon-right.svg);
+  display: inline-block;
+  vertical-align: middle;
+  width: 10px;
+  height: 18px;
+  margin-left: 0.65em;
 }
 
 @media (max-width: 1024px) {
@@ -1865,7 +1916,7 @@ h6 {
 
 .prev-btn::before {
   content: "";
-  background: url(../img/icons/icon-left.svg);
+  background: url(../images/icons/icon-left.svg);
   width: 10px;
   height: 18px;
   display: block;
@@ -1877,7 +1928,7 @@ h6 {
 
 .next-btn::before {
   content: "";
-  background: url(../img/icons/icon-right.svg);
+  background: url(../images/icons/icon-right.svg);
   width: 10px;
   height: 18px;
   display: block;
@@ -1968,7 +2019,7 @@ h6 {
 
 .prev-btn-modal::before {
   content: "";
-  background: url(../img/icons/icon-left.svg);
+  background: url(../images/icons/icon-left.svg);
   width: 10px;
   height: 18px;
   display: block;
@@ -1980,7 +2031,7 @@ h6 {
 
 .next-btn-modal::before {
   content: "";
-  background: url(../img/icons/icon-right.svg);
+  background: url(../images/icons/icon-right.svg);
   width: 10px;
   height: 18px;
   display: block;
@@ -2158,6 +2209,72 @@ textarea {
   bottom: 9px;
 }
 
+/* CONFIRMATION WINDOW */
+.popup-close_confirmation {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 10px;
+}
+
+.popup-close_confirmation:before,
+.popup-close_confirmation:after {
+  content: "";
+  background-color: #ffffff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+}
+
+.popup-close_confirmation:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 4px;
+}
+
+.popup-close_confirmation:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  bottom: 4px;
+}
+
+.popup-window_confirmation {
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+  background: #846227;
+  padding: 1.25em 2.5em;
+}
+
+.popup-window_confirmation.active {
+  top: 0;
+}
+
+.popup-window_confirmation .confirmation-header {
+  font-size: 1.25em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.popup-window_confirmation .confirmation-header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.popup-window_confirmation .confirmation-text {
+  color: #ffffff;
+  text-align: center;
+}
+
 @media (max-width: 768px) {
   .popup-close {
     top: 10%;
@@ -2165,6 +2282,22 @@ textarea {
 
   input[type=submit] {
     font-size: 1em;
+  }
+
+  .popup-window_confirmation {
+    width: 100%;
+  }
+
+  .popup-window_confirmation .confirmation-header {
+    font-size: 1em;
+  }
+
+  .popup-window_confirmation .confirmation-header::after {
+    height: 1px;
+  }
+
+  .popup-window_confirmation .confirmation-text {
+    font-size: 0.85em;
   }
 }
 
@@ -2269,7 +2402,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-twitter.svg");
+  background: url("../images/icons/icon-twitter.svg");
 }
 
 .footer-social-menu_link.fb::before {
@@ -2283,7 +2416,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-facebook.svg");
+  background: url("../images/icons/icon-facebook.svg");
 }
 
 .footer-social-menu_link.linkedin::before {
@@ -2297,7 +2430,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-linkedin.svg");
+  background: url("../images/icons/icon-linkedin.svg");
 }
 
 .footer-social-menu_link.instagram::before {
@@ -2311,7 +2444,7 @@ textarea {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background: url("../img/icons/icon-instagram.svg");
+  background: url("../images/icons/icon-instagram.svg");
 }
 
 .footer-call {

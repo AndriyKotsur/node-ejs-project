@@ -139,14 +139,14 @@ window.onload = function () {
   let closeBtns = [...document.querySelectorAll(".popupCloseBtn")];
   closeBtns.forEach(function (btn) {
     btn.onclick = () => {
-      let popup = btn.closest(".popup-window_modal");
+      let popup = btn.closest(".modalWindow");
       popup.style.display = "none";
     };
   });
 
   window.onclick = (e) => {
 
-    if (e.target.className === "popup-window_modal") {
+    if (e.target.className === "modalWindow") {
       e.target.style.display = "none";
     }
   };
@@ -227,7 +227,7 @@ const adaptiveFilter = (width, height) => {
 
       dropdownMenu.append(filterMenu);
     }
-  } else if(filterMenu){
+  } else if (filterMenu) {
     filterMenu.classList.remove('active');
     dropdownBtn.classList.remove('active');
 
@@ -266,5 +266,49 @@ const filterMenu = document.querySelector('.filterMenu');
 if (dropdownBtn) {
   dropdownBtn.addEventListener('click', () => {
     filterMenu.style.visibility = filterMenu.style.visibility == 'visible' ? 'hidden' : 'visible';
+  });
+};
+
+////////////////////
+/* FORM DATA SEND */
+const modalWindows = [...document.querySelectorAll('.modalWindow')]
+
+const form = (formData) => {
+  fetch('/send-request', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json',
+        'Accept-Charset': 'utf-8'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(res => {
+
+      modalWindows.forEach(function (modalWindow) {
+
+        if (modalWindow) {
+          console.log(modalWindow);
+          modalWindow.style.display = 'none';
+        }
+
+      });
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+const forms = document.getElementsByTagName('form');
+
+for (let i = 0; i < forms.length; i++) {
+  forms[i].addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    let formData = new FormData(this);
+    formData = Object.fromEntries(formData);
+
+    form(formData);
+    this.reset();
   });
 };
