@@ -275,6 +275,13 @@ const modalWindows = [...document.querySelectorAll('.modalWindow')]
 const confirmationWindow = document.querySelector('.modalWindowConfirmation');
 
 const formSend = (formData) => {
+  modalWindows.forEach(function (modalWindow) {
+
+    if (modalWindow) {
+      console.log(modalWindow);
+      modalWindow.style.display = 'none';
+    }
+  });
   fetch('/send-request', {
       method: 'POST',
       headers: {
@@ -285,14 +292,9 @@ const formSend = (formData) => {
       body: JSON.stringify(formData)
     })
     .then(res => {
-
-      modalWindows.forEach(function (modalWindow) {
-
-        if (modalWindow) {
-          console.log(modalWindow);
-          modalWindow.style.display = 'none';
-        }
-      });
+      console.log(res);
+    })
+    .then(function () {
       confirmationWindow.classList.add('active');
     })
     .catch(err => {

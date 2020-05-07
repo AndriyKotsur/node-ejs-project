@@ -36,14 +36,12 @@ router.get('/catalogue', async function (req, res, next) {
 
     console.log(filter);
     const productsCount = await Product.countDocuments(filter);
-    // const filterQuery = Object.values(filter);
     console.log(productsCount);
 
     res.render('catalogue', {
       products: products,
       pageNum: pageNum,
-      pages: Math.ceil(productsCount / itemsPerPage),
-      filterQuery
+      pages: Math.ceil(productsCount / itemsPerPage)
     });
   } catch {
     res.status(500).send();
