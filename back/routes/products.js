@@ -36,22 +36,26 @@ router.post('/products', async function (req, res, next) {
 
 });
 /* Add images */
-router.patch('/products/:id/image', upload.uploadImages, async function (req, res, next) {
+router.patch('/products/:id/image', upload.uploadImages, upload.optimizeImages, async function (req, res, next) {
 
   const imgArr = [];
-
+  const productId = req.params.id;
+  console.log(req.files);
+  
   req.files.map((file) => {
     imgArr.push('/' + file.path);
   });
-
+  console.log(imgArr);
+  
   await Product.findOneAndUpdate({
-    _id: req.params.id
+    _id: productId
   }, {
     imageUrl: imgArr
   }, function (err, product) {
     if (err) {
       res.status(500).send();
     } else {
+      
       res.send(product);
       console.log(product);
     }

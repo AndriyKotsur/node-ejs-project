@@ -29,6 +29,9 @@ router.get('/catalogue', async function (req, res, next) {
   if (req.query.sort) {
     filter.productType = req.query.sort;
   }
+  console.log(filter.productType);
+
+  
   try {
     const products = await Product.find(filter)
       .skip((itemsPerPage * pageNum) - itemsPerPage)
@@ -37,11 +40,13 @@ router.get('/catalogue', async function (req, res, next) {
     console.log(filter);
     const productsCount = await Product.countDocuments(filter);
     console.log(productsCount);
+    
 
     res.render('catalogue', {
       products: products,
       pageNum: pageNum,
-      pages: Math.ceil(productsCount / itemsPerPage)
+      pages: Math.ceil(productsCount / itemsPerPage),
+      query: req.query.sort
     });
   } catch {
     res.status(500).send();

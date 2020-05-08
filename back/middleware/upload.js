@@ -1,5 +1,5 @@
 const multer = require('multer');
-const sharp = require('sharp');
+const jimp = require('jimp');
 const fs = require('fs');
 const path = require('path');
 
@@ -48,6 +48,20 @@ const uploadImages = (req, res, next) => {
     })
 };
 
+const optimizeImages = async (req, res, next) => {
+    await Promise.all(
+        req.files.map(async file => {
+            const image = await jimp.read(file.path);
+            await image.resize(400, 600);
+            await image.quality(80);
+            await image.writeAsync(file.path);
+        })
+    )
+    
+    next();
+};
+
 module.exports = {
-    uploadImages
+    uploadImages,
+    optimizeImages
 };
