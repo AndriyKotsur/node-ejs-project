@@ -81,8 +81,8 @@ router.post('/send-request', function (req, res, next) {
     host: 'smtp.mailtrap.io',
     port: 2525,
     auth: {
-      user: '5380879fc72d56',
-      pass: 'ca131005a261e8'
+      user: process.env.MAIL_USER,
+      pass: process.env.MAIL_PASS
     }
   });
 
