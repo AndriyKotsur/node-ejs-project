@@ -239,12 +239,13 @@ const adaptiveFilter = (width, height) => {
   }
 };
 
-const adaptiveFunc = async () => {
+const adaptiveFunc = () => {
+  
   let w = window.innerWidth;
   let h = window.innerHeight;
 
-  await adaptiveHeader(w, h);
-  await adaptiveFilter(w, h);
+  adaptiveHeader(w, h);
+  adaptiveFilter(w, h);
 }
 
 ///////////////////
