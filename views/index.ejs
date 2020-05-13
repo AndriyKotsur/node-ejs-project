@@ -17,32 +17,29 @@
         <div class="catalogue-top">
             <div class="catalogue-top-left">
                 <div class="catalogue-top-left_header">
-                    <%= __('header') %>
+                    <%= __('main.ourProduction') %>
                 </div>
                 <div class="catalogue-top-left_text">
-                    Левову частку у нашій продукції становлять - крупи. Для постачання якісної та органічної крупи, ми
-                    вибираємо тільки найкращих постачальників, які відповідають нашим вимогам. Наша компанія займається
-                    реалізацією різних видів круп. Окрім круп, ми активно займаємося постачанням цукру, солі та різних
-                    видів макаронних виробів.
+                    <%= __('main.descrProd') %>
                 </div>
                 <div class="catalogue-top-left_btn">
-                    <a href="/catalogue" class="catalogue-btn_link">Каталог</a>
-                    <a href="/contacts" class="catalogue-btn_link">Контакти</a>
+                    <a href="/catalogue" class="catalogue-btn_link"><%= __('main.catalogue') %></a>
+                    <a href="/contacts" class="catalogue-btn_link"><%= __('main.contacts') %></a>
                 </div>
             </div>
             <div class="catalogue-top-right">
                 <div class="catalogue-top-right_item catalogueTopImg" data-cover="largeImg_grains">
                     <img src="/images/slides/croups.jpg" alt="Grains picture">
                     <div class="catalogue-top-right_content" id="largeImg_grains">
-                        <div class="catalogue-top-right_title">Крупи</div>
-                        <a href="/catalogue?sort=grain" class="catalogue-top-right_link">Каталог</a>
+                        <div class="catalogue-top-right_title"><%= __('main.grain') %></div>
+                        <a href="/catalogue?sort=grain" class="catalogue-top-right_link"><%= __('main.catalogue') %></a>
                     </div>
                 </div>
                 <div class="catalogue-top-right_item catalogueTopImg" data-cover="largeImg_coffee">
                     <img src="/images/slides/coffe.jpg" alt="Coffee picture" class="catalogue-top-right_img">
                     <div class="catalogue-top-right_content" id="largeImg_coffee">
-                        <div class="catalogue-top-right_title">Кава</div>
-                        <a href="/catalogue?sort=coffee" class="catalogue-top-right_link">Каталог</a>
+                        <div class="catalogue-top-right_title"><%= __('main.coffee') %></div>
+                        <a href="/catalogue?sort=coffee" class="catalogue-top-right_link"><%= __('main.catalogue') %></a>
                     </div>
                 </div>
             </div>
@@ -51,47 +48,47 @@
             <div class="catalogue-bottom_item catalogueBottomImg" data-cover="smallImg_sugar">
                 <img src="images/slides/sugar.jpg" alt="Sugar picture">
                 <div class="catalogue-bottom_content" id="smallImg_sugar">
-                    <div class="catalogue-bottom_title">Цукор</div>
-                    <a href="/catalogue?sort=sugar" class="catalogue-bottom_link">Каталог</a>
+                    <div class="catalogue-bottom_title"><%= __('main.sugar') %></div>
+                    <a href="/catalogue?sort=sugar" class="catalogue-bottom_link"><%= __('main.catalogue') %></a>
                 </div>
             </div>
             <div class="catalogue-bottom_item catalogueBottomImg" data-cover="smallImg_oil">
                 <img src="images/slides/oil.jpg" alt="Oil picture">
                 <div class="catalogue-bottom_content" id="smallImg_oil">
-                    <div class="catalogue-bottom_title">Олія</div>
-                    <a href="/catalogue?sort=oil" class="catalogue-bottom_link">Каталог</a>
+                    <div class="catalogue-bottom_title"><%= __('main.oil') %></div>
+                    <a href="/catalogue?sort=oil" class="catalogue-bottom_link"><%= __('main.catalogue') %></a>
                 </div>
             </div>
             <div class="catalogue-bottom_item catalogueBottomImg" data-cover="smallImg_salt">
                 <img src="images/slides/salt.jpg" alt="Salt picture">
                 <div class="catalogue-bottom_content" id="smallImg_salt">
-                    <div class="catalogue-bottom_title">Сіль</div>
-                    <a href="/catalogue?sort=salt" class="catalogue-bottom_link">Каталог</a>
+                    <div class="catalogue-bottom_title"><%= __('main.salt') %></div>
+                    <a href="/catalogue?sort=salt" class="catalogue-bottom_link"><%= __('main.catalogue') %></a>
                 </div>
             </div>
             <div class="catalogue-bottom_item catalogueBottomImg" data-cover="smallImg_nudles">
                 <img src="images/slides/nudles.jpg" alt="Nudles picture">
                 <div class="catalogue-bottom_content" id="smallImg_nudles">
-                    <div class="catalogue-bottom_title">Макарони</div>
-                    <a href="/catalogue?sort=nudles" class="catalogue-bottom_link">Каталог</a>
+                    <div class="catalogue-bottom_title"><%= __('main.oil') %></div>
+                    <a href="/catalogue?sort=nudles" class="catalogue-bottom_link"><%= __('main.catalogue') %></a>
                 </div>
             </div>
         </div>
 
         <div class="main-page-advntg">
             <div class="main-page-advntg_title">
-                Наші переваги
+                <%= __('main.ourAdvntg') %>
             </div>
             <div class="main-page-advntg_items">
                 <div class="advntg-items_top">
-                    <div class="advntg-item">Якість продукції</div>
-                    <div class="advntg-item">Досвід та репутація компанії</div>
-                    <div class="advntg-item">Надійні партнери та постачальники</div>
+                    <div class="advntg-item"><%= __('main.advntg.1') %></div>
+                    <div class="advntg-item"><%= __('main.advntg.2') %></div>
+                    <div class="advntg-item"><%= __('main.advntg.3') %></div>
                 </div>
                 <div class="advntg-items_bottom">
-                    <div class="advntg-item">Сертифікована та екологічна продукція</div>
-                    <div class="advntg-item">Широкий вибір продукції</div>
-                    <div class="advntg-item">Професійність та кваліфікація працівників</div>
+                    <div class="advntg-item"><%= __('main.advntg.4') %></div>
+                    <div class="advntg-item"><%= __('main.advntg.5') %></div>
+                    <div class="advntg-item"><%= __('main.advntg.6') %></div>
                 </div>
             </div>
         </div>
@@ -102,20 +99,17 @@
             </div>
             <div class="main-page-company-description">
                 <div class="company-description_title">
-                    Наша компанія
+                    <%= __('main.ourCompany') %>
                 </div>
                 <div class="company-description_text">
-                    ТОВ "СТМ Трейд" - це компанія, яка зарекомендувала себе на ринку, як надійний і якісний постачальник
-                    у сфері оптової фасувальної продукції власного виробництва. Історія діяльності компанії розпочала
-                    свій відлік понад десять років тому. За весь цей час компанія стала лідером на ринку Закарпаття із
-                    постачання якісної та органічної фасувальної продукції.
+                    <%= __('main.descrCompany') %>
                 </div>
             </div>
         </div>
 
         <div class="main-page-partners">
             <div class="main-page-partners_title">
-                Наші партнери
+                <%= __('main.ourPartners') %>
             </div>
             <div class="main-page-partners-slider">
                 <div class="partners-slider_items">

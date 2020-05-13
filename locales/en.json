@@ -1,3 +1,48 @@
 {
-	"header": "Our production"
+	"header": {
+		"orderCall": "Order a call",
+		"production": "Production",
+		"partnership": "Partnership",
+		"aboutUs": "About us",
+		"contacts": "Contacts"
+	},
+	"main": {
+		"ourProduction": "Our production",
+		"descrProd": "The lion's share in our products are cereals. To supply quality and organic cereals, we select only the best suppliers who meet our requirements. Our company sells various types of cereals. In addition to cereals, we are actively engaged in the supply of sugar, salt and various types of pasta.",
+		"catalogue": "Catalogue",
+		"contacts": "Contacts",
+		"grain": "Grain",
+		"coffee": "Coffee",
+		"sugar": "Sugar",
+		"oil": "Oil",
+		"salt": "Salt",
+		"nudles": "Nudles",
+		"ourAdvntg": "Our advantages",
+		"advntg": {
+			"1": "Production quality",
+			"2": "Experience and reputation of the company",
+			"3": "Reliable partners and suppliers",
+			"4": "Certified and ecological products",
+			"5": "Wide choice of products",
+			"6": "Professionalism and qualification of employees"
+		},
+		"ourCompany": "Our company",
+		"descrCompany": "STM Trade LLC is a company that has established itself on the market as a reliable and high-quality supplier in the field of wholesale packaging products of its own production. The company's history began more than ten years ago. During all this time, the company has become a leader in the Transcarpathian market for the supply of quality and organic packaging products.",
+		"ourPartners": "Our partners"
+	},
+	"footer": {
+		"writeUs": "Write us",
+		"production": "Production",
+		"partnership": "Partnership",
+		"aboutUs": "About us",
+		"contacts": "Contacts"
+	},
+	"modal": {
+		"name": "Enter your name",
+		"phone": "Enter your phone number",
+		"message": "Enter your message",
+		"send": "Send",
+		"title": "Thank you for your request!",
+		"text": "Our manager will contact you in 30 minutes"
+	}
 }

@@ -7,11 +7,11 @@
         <form class="popup-form">
             <ul class="popup-form-fields">
                 <li><input class="popup-form-field" type="text" name="name" id="name"
-                        placeholder="Ваше ім'я та прізвище" required></li>
-                <li><input class="popup-form-field" type="tel" name="phone" id="phone" placeholder="Ваш номер телефона"
+                        placeholder="<%= __('modal.name') %>" required></li>
+                <li><input class="popup-form-field" type="tel" name="phone" id="phone" placeholder="<%= __('modal.phone') %>"
                         required></li>
                 <li>
-                    <div class="popup-form-field_btn"><input type="submit" value="Надіслати"></div>
+                    <div class="popup-form-field_btn"><input type="submit" value="<%= __('modal.send') %>"></div>
                 </li>
             </ul>
         </form>
@@ -26,14 +26,14 @@
     <div class="popup-content">
         <form class="popup-form">
             <ul class="popup-form_fields">
-                <li><input class="popup-form-field" type="text" name="name" placeholder="Ваше ім'я та прізвище"
+                <li><input class="popup-form-field" type="text" name="name" placeholder="<%= __('modal.name') %>"
                         required></li>
-                <li><input class="popup-form-field" type="tel" name="phone" placeholder="Ваш номер телефона" required>
+                <li><input class="popup-form-field" type="tel" name="phone" placeholder="<%= __('modal.phone') %>" required>
                 </li>
                 <li><textarea class="popup-form-field" name="message" id="message" cols="30" rows="10"
-                        placeholder="Ваше повідомлення"></textarea></li>
+                        placeholder="<%= __('modal.message') %>"></textarea></li>
                 <li>
-                    <div class="popup-form-field_btn"><input type="submit" value="Надіслати">
+                    <div class="popup-form-field_btn"><input type="submit" value="<%= __('modal.send') %>">
                 </li>
             </ul>
         </form>
@@ -47,10 +47,10 @@
     </div>
     <div class="popup-confirmation">
         <div class="confirmation-header">
-            Дякую за звернення!
+            <%= __('modal.title') %>
         </div>
         <div class="confirmation-text">
-            Наш менеджер зв'яжеться з вами протягом 30 хвилин
+            <%= __('modal.text') %>
         </div>
     </div>
 </div>

@@ -10,8 +10,6 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/ua', function (req, res, next) {
-  const pathId = req.originalUrl;
-  console.log(pathId);
   try {
     res.cookie('_locale_lang', 'uk', {
       maxAge: 600000,
