@@ -9,6 +9,30 @@ router.get('/', function (req, res, next) {
   res.render('index');
 });
 
+router.get('/ua', function (req, res, next) {
+  const pathId = req.originalUrl;
+  console.log(pathId);
+  try {
+    res.cookie('_locale_lang', 'uk', {
+      maxAge: 600000,
+      httpOnly: true
+    });
+
+    res.redirect('back');
+
+  } catch {
+    res.status(500).send();
+  }
+});
+
+router.get('/en', function (req, res, next) {
+  res.cookie('_locale_lang', 'en', {
+    maxAge: 600000,
+    httpOnly: true
+  });
+  res.redirect('back');
+});
+
 router.get('/partnership', function (req, res, next) {
   res.render('partnership');
 });
@@ -31,16 +55,13 @@ router.get('/catalogue', async function (req, res, next) {
   }
   console.log(filter.productType);
 
-  
+
   try {
     const products = await Product.find(filter)
       .skip((itemsPerPage * pageNum) - itemsPerPage)
       .limit(itemsPerPage);
 
-    console.log(filter);
     const productsCount = await Product.countDocuments(filter);
-    console.log(productsCount);
-    
 
     res.render('catalogue', {
       products: products,
@@ -59,7 +80,6 @@ router.get('/catalogue-item/:id', async function (req, res, next) {
     const product = await Product.findOne({
       _id: req.params.id
     });
-    console.log(product);
 
     if (!product) {
       return res.status(404).send();
@@ -108,7 +128,6 @@ router.post('/send-request', function (req, res, next) {
     if (err) {
       return console.log(err);
     } else {
-      console.log(data);
       res.status(202).send('Request accepted');
 
       transport.close();

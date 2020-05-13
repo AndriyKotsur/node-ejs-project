@@ -4,6 +4,9 @@ const path = require('path');
 const ejs = require('ejs')
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const i18n = require('./middleware/i18');
+const i18nHelper = require('./middleware/i18-helper');
+
 
 /* DATABASE */
 require('./db');
@@ -16,6 +19,7 @@ const app = express();
 const indexRouter = require('./routes/index');
 const productsRouter = require('./routes/products');
 
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -27,15 +31,17 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(cookieParser());
 
+app.use(i18n.init);
+app.use(i18nHelper);
 
 app.use('/', indexRouter);
 app.use('/', productsRouter);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });
-
 // error handler
 app.use(function(err, req, res, next) {
   // set locals, only providing error in development
