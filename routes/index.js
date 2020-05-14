@@ -12,7 +12,7 @@ router.get('/', function (req, res, next) {
 router.get('/ua', function (req, res, next) {
   try {
     res.cookie('_locale_lang', 'uk', {
-      maxAge: 600000,
+      maxAge: 6000000,
       httpOnly: true
     });
 
@@ -25,7 +25,15 @@ router.get('/ua', function (req, res, next) {
 
 router.get('/en', function (req, res, next) {
   res.cookie('_locale_lang', 'en', {
-    maxAge: 600000,
+    maxAge: 6000000,
+    httpOnly: true
+  });
+  res.redirect('back');
+});
+
+router.get('/ru', function (req, res, next) {
+  res.cookie('_locale_lang', 'ru', {
+    maxAge: 6000000,
     httpOnly: true
   });
   res.redirect('back');
@@ -47,12 +55,12 @@ router.get('/catalogue', async function (req, res, next) {
   const filter = {};
   const itemsPerPage = 3;
   const pageNum = req.query.page || 1;
-
+  const langUrl = req.cookies._locale_lang;
+  console.log(langUrl);
+  
   if (req.query.sort) {
     filter.productType = req.query.sort;
   }
-  console.log(filter.productType);
-
 
   try {
     const products = await Product.find(filter)

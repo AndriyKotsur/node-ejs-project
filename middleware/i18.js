@@ -1,9 +1,11 @@
 const i18n = require('i18n');
 
 i18n.configure({
-    locales: ['uk', 'en'],
+    locales: ['uk', 'en', 'ru'],
     fallbacks: {
-        'uk': 'en'
+        'uk': 'en',
+        'uk': 'ru',
+        'en': 'ru'
     },
     defaultLocale: 'uk',
     cookie: '_locale_lang',

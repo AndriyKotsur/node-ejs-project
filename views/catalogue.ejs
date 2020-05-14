@@ -15,16 +15,16 @@
     <div class="catalogue-wrapper">
         <div class="catalogue-filter filterContainer">
             <div class="catalogue-filter-list filterMenu">
-                <a href="/catalogue?sort=sugar" class="catalogue-filter-item filterItem">Цукор</a>
-                <a href="/catalogue?sort=oil" class="catalogue-filter-item filterItem">Олія</a>
-                <a href="/catalogue?sort=soda" class="catalogue-filter-item filterItem">Сода</a>
-                <a href="/catalogue?sort=grain" class="catalogue-filter-item filterItem">Крупи</a>
-                <a href="/catalogue?sort=salt" class="catalogue-filter-item filterItem">Сіль</a>
-                <a href="/catalogue?sort=nudles" class="catalogue-filter-item filterItem">Макарони</a>
-                <a href="/catalogue?sort=coffee" class="catalogue-filter-item filterItem">Кава</a>
+                <a href="/catalogue?sort=sugar" class="catalogue-filter-item filterItem"><%= __('production.sugar') %></a>
+                <a href="/catalogue?sort=oil" class="catalogue-filter-item filterItem"><%= __('production.oil') %></a>
+                <a href="/catalogue?sort=soda" class="catalogue-filter-item filterItem"><%= __('production.soda') %></a>
+                <a href="/catalogue?sort=grain" class="catalogue-filter-item filterItem"><%= __('production.grain') %></a>
+                <a href="/catalogue?sort=salt" class="catalogue-filter-item filterItem"><%= __('production.salt') %></a>
+                <a href="/catalogue?sort=nudles" class="catalogue-filter-item filterItem"><%= __('production.nudles') %></a>
+                <a href="/catalogue?sort=coffee" class="catalogue-filter-item filterItem"><%= __('production.coffee') %></a>
             </div>
             <div class="catalogue-filter-list_dropdown dropdownMenu">
-                <a class="catalogue-filter-item_dropdown dropdownBtn" href="#">Категорії:</a>
+                <a class="catalogue-filter-item_dropdown dropdownBtn" href="#"><%= __('production.category') %></a>
             </div>
         </div>
 
@@ -47,22 +47,22 @@
     <div class="catalogue-pagination">
         <% if(query) { %>
             <% if(pageNum == 1 && pages > 1) { %>
-                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>&sort=<%= query%>" class="catalogue-pagination-next">Наступна</a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>&sort=<%= query%>" class="catalogue-pagination-next"><%= __('production.next') %></a>
             <% } else if (pageNum < pages) { %>
-                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>&sort=<%= query %>" class="catalogue-pagination-prev">Попередня</a>
-                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>&sort=<%= query %>" class="catalogue-pagination-next">Наступна</a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>&sort=<%= query %>" class="catalogue-pagination-prev"><%= __('production.prev') %></a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>&sort=<%= query %>" class="catalogue-pagination-next"><%= __('production.next') %></a>
             <% } else if(pageNum == pages && pages > 1) { %>
-                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>&sort=<%= query %>" class="catalogue-pagination-prev">Попередня</a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>&sort=<%= query %>" class="catalogue-pagination-prev"><%= __('production.prev') %></a>
             <% } %>    
         <% } else { %>
 
             <% if(pageNum == 1 && pages > 1) { %>
-                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>" class="catalogue-pagination-next">Наступна</a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>" class="catalogue-pagination-next"><%= __('production.next') %></a>
             <% } else if (pageNum < pages) { %>
-                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>" class="catalogue-pagination-prev">Попередня</a>
-                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>" class="catalogue-pagination-next">Наступна</a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>" class="catalogue-pagination-prev"><%= __('production.prev') %></a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) + 1 %>" class="catalogue-pagination-next"><%= __('production.next') %></a>
             <% } else if(pageNum == pages && pages > 1) { %>
-                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>" class="catalogue-pagination-prev">Попередня</a>
+                <a href="/catalogue?page=<%= parseInt(pageNum) - 1 %>" class="catalogue-pagination-prev"><%= __('production.prev') %></a>
             <% } %>
             
         <% } %>

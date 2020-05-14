@@ -30,6 +30,75 @@
 		"descrCompany": "STM Trade LLC is a company that has established itself on the market as a reliable and high-quality supplier in the field of wholesale packaging products of its own production. The company's history began more than ten years ago. During all this time, the company has become a leader in the Transcarpathian market for the supply of quality and organic packaging products.",
 		"ourPartners": "Our partners"
 	},
+	"production": {
+		"grain": "Grain",
+		"coffee": "Coffee",
+		"sugar": "Sugar",
+		"soda": "Soda",
+		"oil": "Oil",
+		"salt": "Salt",
+		"nudles": "Nudles",
+		"category": "Category:",
+		"prev": "Previous",
+		"next": "Next"
+	},
+	"product": {
+		"productDescription": {
+			"title": "Title",
+			"storage": "Storage",
+			"regDocument": "Regular document",
+			"netPacking": "Net packing",
+			"grossPacking": "Gross packing",
+			"barcode": "Barcode",
+			"typePacking": "Type of packing",
+			"countBox": "Count per box",
+			"countPallet": "Count per pallet",
+			"expDate": "Exp. Date",
+			"storageCondition": "Storage condition"
+		},
+		"descrProduct": "Product description",
+		"makeOrder": "Make an order"
+	},
+	"partnership": {
+		"partnership": "Partnership",
+		"ourPartners": "Our partners",
+		"descr1": "During the company's existence, we have significantly expanded the base of our suppliers, which has allowed us to raise our level of quality. Improving quality standards has brought our company to the leaders in the field of packaging products in our region.",
+		"descr2": "Along with the growth of the quality of our services and products, we have started cooperation with powerful companies in the region. The main achievements are the beginning of cooperation with national and regional trade networks, as well as international industrial enterprises.",
+		"list": {
+			"1": "Vopak and Silverland supermarket chain",
+			"2": "Dastor Shopping Center",
+			"3": "Electronics companies “Flextronics” and “Jabil Circuit”",
+			"4": "Enterprise for the production of products for the automotive industry"
+		}
+	},
+	"aboutUs": {
+		"advtg": {
+			"1": "20+ years of market experience",
+			"2": "Reliable partners and suppliers throughout the region",
+			"3": "Professionals and specialists in their field",
+			"4": "Quality and ecological products are confirmed by quality certificates"
+		},
+		"ourCompany": "Our Company",
+		"descrCompany": "STM Trade LLC is a company that works and is constantly developing in the field of packaging products. The company has been on the market for over 20 years, but even in such a short time has established itself as a reliable supplier of quality and environmentally friendly products.",
+		"ourPartners": "Our partners",
+		"descrPartners": "The technologies and approaches used by the company allow to realize the company's capacities as efficiently as possible. We promptly and efficiently provide our clients, among our clients, with large regional trade networks and international production enterprises.",
+		"production": "Production",
+		"descrProd": "The main range of our products are cereals of different varieties. In addition to cereals, we supply sugar, salt, oil and pasta. Given the needs and interests of our customers, we are constantly expanding the range of our products. We are represented under the brand Vitalina.",
+		"facture": "Facture",
+		"descrFacture": "The company has warehouses and production facilities, along with modern equipment. STM Trade Ltd. is constantly improving quality standards in production, which makes us an efficient and high-quality supplier for our customers."
+	},
+	"contacts": {
+		"warehouse": "Warehouse",
+		"office": "Office",
+		"address": {
+			"1": "88017, Zakarpattia region, Uzhhorod city, PROVULOK LEONTOVYCHA MYKOLY, house 2, apartment 6",
+			"2": "89425, Zakarpattia region, Uzhhorod district, Baranyntsi village, KORYTNYANSKA STREET, building 8",
+			"3": "88017, Zakarpattia region, Khust city, Vokzalnaya street, house 21"
+		},
+		"question": "Have a question?",
+		"answer": "Or we will answer you here:",
+		"orderCall": "Order a call"
+	},
 	"footer": {
 		"writeUs": "Write us",
 		"production": "Production",

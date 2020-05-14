@@ -36,59 +36,58 @@
                 </div>
             </div>
             <div class="product-column">
-                <div class="product-description">Опис товару</div>
+                <div class="product-description"><%= __('product.descrProduct') %></div>
                 <table class="product-table">
                     <tbody class="product-table_body">
 
                         <tr>
-                            <td>Найменування товару</td>
+                            <td><%= __('product.productDescription.title') %></td>
                             <td><%= product.productDescription.title %></td>
                         </tr>
                         <tr>
-                            <td>Склад</td>
+                            <td><%= __('product.productDescription.storage') %></td>
                             <td><%= product.productDescription.storage %></td>
                         </tr>
                         <tr>
-                            <td>Нормативний документ</td>
+                            <td><%= __('product.productDescription.regDocument') %></td>
                             <td><%= product.productDescription.regDocument %></td>
                         </tr>
                         <tr>
-                            <td>Фасовка нетто</td>
+                            <td><%= __('product.productDescription.netPacking') %></td>
                             <td><%= product.productDescription.netPacking %></td>
                         </tr>
                         <tr>
-                            <td>Фасовка брутто</td>
+                            <td><%= __('product.productDescription.grossPacking') %></td>
                             <td><%= product.productDescription.grossPacking %>/td>
                         </tr>
                         <tr>
-                            <td>Штрих код упаковки</td>
+                            <td><%= __('product.productDescription.barcode') %></td>
                             <td><%= product.productDescription.barcode %></td>
                         </tr>
                         <tr>
-                            <td>Тип пакування упаковки</td>
+                            <td><%= __('product.productDescription.typePacking') %></td>
                             <td><%= product.productDescription.typePacking %></td>
                         </tr>
                         <tr>
-                            <td>Кількість шт./kg ящик</td>
+                            <td><%= __('product.productDescription.countBox') %></td>
                             <td><%= product.productDescription.countBox %></td>
                         </tr>
                         <tr>
-                            <td>Кількість шт./kg піддон</td>
-                            <td><%= product.productDescription.countPallet%></td>
+                            <td><%= __('product.productDescription.countPallet') %></td>
+                            <td><%= product.productDescription.countPallet %></td>
                         </tr>
                         <tr>
-                            <td>Термін придатності</td>
+                            <td><%= __('product.productDescription.expDate') %></td>
                             <td><%= product.productDescription.expDate %></td>
                         </tr>
                         <tr>
-                            <td>Умови зберігання</td>
+                            <td><%= __('product.productDescription.storageCondition') %></td>
                             <td><%= product.productDescription.storageCondition %></td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="product-button_order">
-                    <a class="product-button_link popupBtn" data-popup="pop_message_order">Зробити
-                        замовлення</a>
+                    <a class="product-button_link popupBtn" data-popup="pop_message_order"><%= __('product.makeOrder') %></a>
                 </div>
             </div>
         </div>
