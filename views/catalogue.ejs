@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cпівпраця</title>
+    <title><%= __('head.title') %></title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -35,9 +36,19 @@
                     <div class="catalogue-item-img_wrapper">
                         <img src="<%= product.imageUrl[0] %>" alt="Catalogue item">
                     </div>
+                    <% if(langId == 'en') { %>
                     <div class="catalogue-item_title">
-                        <%= product.productTitle %>
+                        <%= product.productTitle.en %>
                     </div>
+                    <% } else if (langId == 'ru'){ %>
+                    <div class="catalogue-item_title">
+                        <%= product.productTitle.ru %>
+                    </div>
+                    <% } else { %>
+                    <div class="catalogue-item_title">
+                        <%= product.productTitle.uk %>
+                    </div>
+                    <% } %>
                 </a>
             </div>
             <% }) %>

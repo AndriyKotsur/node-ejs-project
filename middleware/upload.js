@@ -52,7 +52,7 @@ const optimizeImages = async (req, res, next) => {
     await Promise.all(
         req.files.map(async file => {
             const image = await jimp.read(file.path);
-            await image.resize(400, 600);
+            await image.resize(420, 620);
             await image.quality(80);
             await image.writeAsync(file.path);
         })

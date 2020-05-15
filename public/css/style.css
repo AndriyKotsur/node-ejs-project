@@ -139,6 +139,7 @@ h6 {
   font-size: 0.85em;
   text-transform: uppercase;
   letter-spacing: normal;
+  cursor: pointer;
 }
 
 .header-top-lang_item {
@@ -1671,8 +1672,10 @@ h6 {
 .catalogue-pagination-prev {
   margin-right: 0.65em;
   padding: 0.65em 1.25em;
+  max-width: 140px;
   background: #846227;
   color: #ffffff;
+  text-align: center;
 }
 
 .catalogue-pagination-prev::before {
@@ -1688,8 +1691,10 @@ h6 {
 .catalogue-pagination-next {
   margin-left: 0.65em;
   padding: 0.65em 1.25em;
+  min-width: 110px;
   background: #846227;
   color: #ffffff;
+  text-align: center;
 }
 
 .catalogue-pagination-next::after {
@@ -1819,6 +1824,7 @@ h6 {
   text-transform: uppercase;
   letter-spacing: normal;
   background-color: #f5e0b7;
+  cursor: pointer;
 }
 
 .product-button_link:hover {
@@ -2466,8 +2472,10 @@ textarea {
   font-size: 0.85em;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
+  text-align: center;
   letter-spacing: normal;
   background-color: #846227;
+  cursor: pointer;
 }
 
 .footer-contact_us:hover {

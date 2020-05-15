@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Catalogue item</title>
+    <title><%= __('head.title') %></title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -16,9 +17,19 @@
         <div class="product-wrapper">
             <div class="product-column">
                 <div class="slider-container">
+                    <% if(langId == 'en') { %>
                     <div class="slider-title">
-                        <%= product.productTitle %>
+                        <%= product.productTitle.en %>
                     </div>
+                    <% } else if (langId == 'ru'){ %>
+                    <div class="slider-title">
+                        <%= product.productTitle.ru %>
+                    </div>
+                    <% } else { %>
+                    <div class="slider-title">
+                        <%= product.productTitle.uk %>
+                    </div>
+                    <% } %>
                     <div class="slider-container-items sliderContainer">
                         <% for(let i = 0; i < product.imageUrl.length; i++) { %>
                         <img src="<%= product.imageUrl[i] %>" class="slides-item slidesItem" alt="Slides photography" />
@@ -39,26 +50,26 @@
                 <div class="product-description"><%= __('product.descrProduct') %></div>
                 <table class="product-table">
                     <tbody class="product-table_body">
-
+                        <% if(langId =='en') { %>
                         <tr>
                             <td><%= __('product.productDescription.title') %></td>
-                            <td><%= product.productDescription.title %></td>
+                            <td><%= product.productDescription.title.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.storage') %></td>
-                            <td><%= product.productDescription.storage %></td>
+                            <td><%= product.productDescription.storage.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.regDocument') %></td>
-                            <td><%= product.productDescription.regDocument %></td>
+                            <td><%= product.productDescription.regDocument.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.netPacking') %></td>
-                            <td><%= product.productDescription.netPacking %></td>
+                            <td><%= product.productDescription.netPacking.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.grossPacking') %></td>
-                            <td><%= product.productDescription.grossPacking %>/td>
+                            <td><%= product.productDescription.grossPacking.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.barcode') %></td>
@@ -66,44 +77,136 @@
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.typePacking') %></td>
-                            <td><%= product.productDescription.typePacking %></td>
+                            <td><%= product.productDescription.typePacking.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.countBox') %></td>
-                            <td><%= product.productDescription.countBox %></td>
+                            <td><%= product.productDescription.countBox.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.countPallet') %></td>
-                            <td><%= product.productDescription.countPallet %></td>
+                            <td><%= product.productDescription.countPallet.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.expDate') %></td>
-                            <td><%= product.productDescription.expDate %></td>
+                            <td><%= product.productDescription.expDate.en %></td>
                         </tr>
                         <tr>
                             <td><%= __('product.productDescription.storageCondition') %></td>
-                            <td><%= product.productDescription.storageCondition %></td>
+                            <td><%= product.productDescription.storageCondition.en %></td>
                         </tr>
+                        <% } else if (langId == 'ru') { %>
+                        <tr>
+                            <td><%= __('product.productDescription.title') %></td>
+                            <td><%= product.productDescription.title.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.storage') %></td>
+                            <td><%= product.productDescription.storage.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.regDocument') %></td>
+                            <td><%= product.productDescription.regDocument.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.netPacking') %></td>
+                            <td><%= product.productDescription.netPacking.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.grossPacking') %></td>
+                            <td><%= product.productDescription.grossPacking.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.barcode') %></td>
+                            <td><%= product.productDescription.barcode %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.typePacking') %></td>
+                            <td><%= product.productDescription.typePacking.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.countBox') %></td>
+                            <td><%= product.productDescription.countBox.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.countPallet') %></td>
+                            <td><%= product.productDescription.countPallet.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.expDate') %></td>
+                            <td><%= product.productDescription.expDate.ru %></td>
+                        </tr>
+                        <tr>
+                            <td><%= __('product.productDescription.storageCondition') %></td>
+                            <td><%= product.productDescription.storageCondition.ru %></td>
+                        </tr>
+                        <% } else { %>
+                            <tr>
+                                <td><%= __('product.productDescription.title') %></td>
+                                <td><%= product.productDescription.title.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.storage') %></td>
+                                <td><%= product.productDescription.storage.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.regDocument') %></td>
+                                <td><%= product.productDescription.regDocument.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.netPacking') %></td>
+                                <td><%= product.productDescription.netPacking.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.grossPacking') %></td>
+                                <td><%= product.productDescription.grossPacking.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.barcode') %></td>
+                                <td><%= product.productDescription.barcode %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.typePacking') %></td>
+                                <td><%= product.productDescription.typePacking.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.countBox') %></td>
+                                <td><%= product.productDescription.countBox.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.countPallet') %></td>
+                                <td><%= product.productDescription.countPallet.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.expDate') %></td>
+                                <td><%= product.productDescription.expDate.uk %></td>
+                            </tr>
+                            <tr>
+                                <td><%= __('product.productDescription.storageCondition') %></td>
+                                <td><%= product.productDescription.storageCondition.uk %></td>
+                            </tr>
+                        <% } %>
                     </tbody>
                 </table>
                 <div class="product-button_order">
-                    <a class="product-button_link popupBtn" data-popup="pop_message_order"><%= __('product.makeOrder') %></a>
-                </div>
+                    <a class="product-button_link popupBtn"
+                        data-popup="pop_message_order"><%= __('product.makeOrder') %></a>
             </div>
         </div>
+    </div>
 
-        <div class="popup-window_slider modalWindow">
-            <div class="popup-content_slider sliderModalContainer"></div>
-            <a class="prev-btn-modal prevBtnModal"></a>
-            <a class="next-btn-modal nextBtnModal"></a>
-            <div class="popup-close popupCloseBtnSlider">
-                <span></span>
-            </div>
+    <div class="popup-window_slider modalWindow">
+        <div class="popup-content_slider sliderModalContainer"></div>
+        <a class="prev-btn-modal prevBtnModal"></a>
+        <a class="next-btn-modal nextBtnModal"></a>
+        <div class="popup-close popupCloseBtnSlider">
+            <span></span>
         </div>
+    </div>
 
-        <%-  include('../partials/modal')-%>
-        <%-  include('../partials/footer')-%>
-        <script src="/script/script.js"></script>
+    <%-  include('../partials/modal')-%>
+    <%-  include('../partials/footer')-%>
+    <script src="/script/script.js"></script>
 </body>
 
 </html>

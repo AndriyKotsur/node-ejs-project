@@ -3,12 +3,13 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const Product = require('../models/products');
 
-/* GET home page. */
+/* GET home page */
 
 router.get('/', function (req, res, next) {
   res.render('index');
 });
 
+/* Lang pages */
 router.get('/ua', function (req, res, next) {
   try {
     res.cookie('_locale_lang', 'uk', {
@@ -39,6 +40,7 @@ router.get('/ru', function (req, res, next) {
   res.redirect('back');
 });
 
+/* Another pages */
 router.get('/partnership', function (req, res, next) {
   res.render('partnership');
 });
@@ -50,14 +52,16 @@ router.get('/about-us', function (req, res, next) {
 router.get('/contacts', function (req, res, next) {
   res.render('contacts');
 });
-
+/* Catalogue */
 router.get('/catalogue', async function (req, res, next) {
   const filter = {};
   const itemsPerPage = 3;
   const pageNum = req.query.page || 1;
+  const langConfig = req.acceptsLanguages();
   const langUrl = req.cookies._locale_lang;
-  console.log(langUrl);
-  
+  const langId = langUrl ? langUrl : langConfig[0];
+  console.log(langId);
+
   if (req.query.sort) {
     filter.productType = req.query.sort;
   }
@@ -73,7 +77,8 @@ router.get('/catalogue', async function (req, res, next) {
       products: products,
       pageNum: pageNum,
       pages: Math.ceil(productsCount / itemsPerPage),
-      query: req.query.sort
+      query: req.query.sort,
+      langId: langId
     });
   } catch {
     res.status(500).send();
@@ -82,9 +87,13 @@ router.get('/catalogue', async function (req, res, next) {
 
 router.get('/catalogue-item/:id', async function (req, res, next) {
 
+  const langConfig = req.acceptsLanguages();
+  const langUrl = req.cookies._locale_lang;
+  const langId = langUrl ? langUrl : langConfig[0];
+
   try {
     const product = await Product.findOne({
-      _id: req.params.id
+      _id: req.params.id,
     });
 
     if (!product) {
@@ -92,7 +101,8 @@ router.get('/catalogue-item/:id', async function (req, res, next) {
     }
 
     res.render('catalogue-item', {
-      product
+      product,
+      langId: langId
     });
 
   } catch {

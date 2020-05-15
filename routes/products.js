@@ -36,7 +36,7 @@ router.post('/products', async function (req, res, next) {
 
 });
 /* Add images */
-router.patch('/products/:id/image', upload.uploadImages, upload.optimizeImages, async function (req, res, next) {
+router.patch('/products/image/:id', upload.uploadImages, upload.optimizeImages, async function (req, res, next) {
 
   const imgArr = [];
   const productId = req.params.id;
