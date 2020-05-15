@@ -8,13 +8,13 @@ const i18n = require('./middleware/i18');
 const i18nHelper = require('./middleware/i18-helper');
 
 
-/* DATABASE */
+// Database
 require('./db');
 const {port, database} = require('./config');
 console.log(`Your port is: ${port}`);
 console.log(`Database name: ${database}`);
 
-/* ROUTES */
+// Routes
 const app = express();
 const indexRouter = require('./routes/index');
 const productsRouter = require('./routes/products');
@@ -31,9 +31,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use(logger('dev'));
 app.use(cookieParser());
 
+// Locale setup
 app.use(i18n.init);
 app.use(i18nHelper);
 
+// Router setup
 app.use('/', indexRouter);
 app.use('/', productsRouter);
 

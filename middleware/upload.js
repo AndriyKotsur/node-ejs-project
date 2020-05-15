@@ -52,12 +52,20 @@ const optimizeImages = async (req, res, next) => {
     await Promise.all(
         req.files.map(async file => {
             const image = await jimp.read(file.path);
-            await image.resize(420, 620);
-            await image.quality(80);
-            await image.writeAsync(file.path);
+            const widthProps = image.bitmap.width;
+            const heightProps = image.bitmap.height;
+            if (widthProps < heightProps) {
+                await image.resize(400, 800);
+                await image.quality(70);
+                await image.writeAsync(file.path);
+            } else {
+                await image.resize(1200, 800);
+                await image.quality(70);
+                await image.writeAsync(file.path);
+            }
         })
     )
-    
+
     next();
 };
 
