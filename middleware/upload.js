@@ -7,9 +7,9 @@ const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         const productId = req.params.id;
         const folder = `./uploads/images/products/${productId}`
-        fs.exists(folder, exist => {
-            if (!exist) {
-                return fs.mkdir(folder, error => cb(error, folder))
+        fs.access(folder, fs.constants.F_OK, () => {
+            if (!fs.constants.F_OK) {
+                return fs.mkdir(folder, {recursive: true}, error => cb(error, folder));
             }
             return cb(null, folder)
         })
