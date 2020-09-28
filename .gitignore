@@ -1,5 +1,6 @@
 node_modules/
 dsgn/
+.env
 *.config
 *.log
 *.code-workspace
