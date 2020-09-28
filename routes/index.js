@@ -52,6 +52,7 @@ router.get('/about-us', function (req, res, next) {
 router.get('/contacts', function (req, res, next) {
   res.render('contacts');
 });
+
 /* Catalogue */
 router.get('/catalogue', async function (req, res, next) {
   const filter = {};
@@ -60,7 +61,6 @@ router.get('/catalogue', async function (req, res, next) {
   const langConfig = req.acceptsLanguages();
   const langUrl = req.cookies._locale_lang;
   const langId = langUrl ? langUrl : langConfig[0];
-  console.log(langId);
 
   if (req.query.sort) {
     filter.productType = req.query.sort;
