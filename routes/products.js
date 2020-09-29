@@ -40,13 +40,11 @@ router.put('/products/image/:id', upload.uploadImages, async function (req, res,
 
   const imgArr = [];
   const productId = req.params.id;
-  console.log(req.files);
-  
+
   req.files.map((file) => {
-    imgArr.push(file.location); 
+    imgArr.push(file.location);
   });
-  console.log(imgArr);
-  
+
   await Product.findOneAndUpdate({
     _id: productId
   }, {
@@ -55,11 +53,39 @@ router.put('/products/image/:id', upload.uploadImages, async function (req, res,
     if (err) {
       res.status(500).send();
     } else {
-      
+
       res.send(product);
-      console.log(product);
     }
   });
+});
+
+/* Update product */
+router.put('/products/:id', async function (req, res, next) {
+  const updates = Object.keys(req.body);
+  const allowUpdates = ['productTitle', 'productType', 'productDescription', 'storage'];
+  const isValidOperation = updates.every((update) => allowUpdates.includes(update));
+
+  if (!isValidOperation) {
+    return res.status(400).send({
+      error: 'Invalid updates'
+    })
+  }
+
+  try {
+    const product = await Product.findOne({
+      _id: req.params.id
+    });
+
+    if (!product) {
+      return res.status(404).send();
+    }
+
+    updates.forEach((update) => product[update] = req.body[update])
+    await product.save()
+    res.send(product)
+  } catch {
+    res.status(400).send(e)
+  }
 });
 
 /* Delete product */
